@@ -14,8 +14,6 @@ body {
     list-style: none;
     position: relative;
     float: left;
-}
-.slotwrapper ul {
     width: 200px;
     height:200px;
     font-size: 200px;
@@ -25,6 +23,39 @@ body {
 .slotwrapper ul li img {
     vertical-align: top;
 }
+
+#example6 ul li img[data-tooltip]:before {
+    /* needed - do not touch */
+    content: attr(data-tooltip);
+    position: absolute;
+    display: none;
+  
+    /* customizable */
+    transition: all 0.15s ease;
+    padding: 10px;
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 1px silver;
+  }
+  
+#example6 ul li img[data-tooltip]:hover:before {
+    /* needed - do not touch */
+    display: inline-block;
+    animation: fadeIn 0.3s;
+  
+    /* customizable */
+    background: #343a40;
+    color: white;
+    font-weight: initial;
+    font-size: initial;
+    margin-top: -50px;
+    margin-left: 20px;
+  }
+  
+[data-tooltip]:not([data-tooltip-persistent]):before {
+    pointer-events: none;
+  }
+
 @media screen and (max-width: 1200px) {
     .slotwrapper {
         width: 100%;
@@ -69,3 +100,5 @@ body {
         line-height: 100px;
     }
 }
+
+
