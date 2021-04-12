@@ -30,3 +30,37 @@ var options = {};
 var network = new vis.Network(container, data, options);
 
 });
+
+class Item{
+    constructor(name,img,probability){
+        //img is path to picture
+        this.name=name;
+        this.img = img;
+        this.probability = probability;
+    }
+}
+
+var item1 = new Item("glove","path",0.9);
+var item2 = new Item("coat","path",0.6);
+var item3 = new Item("coat","path",0.4);
+
+function compare(a, b){
+    if(a.probability<b.probability){
+        return -1;
+    }
+    else if (a.probability>b.probability){
+        return 1;
+    }
+    return 0;
+}
+
+function print_value(a){
+    console.log(a.probability);
+}
+
+var tree = new buckets.BSTree(compare);
+tree.add(item1);
+tree.add(item2);
+tree.add(item3);
+tree.inorderTraversal(print_value);
+console.log(tree.getRoot().probability)

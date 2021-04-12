@@ -827,47 +827,6 @@
     <script src="src/slotmachine.min.js"></script>
 
     <script type="text/javascript">
-        $('#btn-example1').click(function () {
-            $('#example1 ul').playSpin();
-        });
-
-        $('#btn-example2').click(function () {
-            var num1 = $('#txt-example2-1').val();
-            var num2 = $('#txt-example2-2').val();
-            var num3 = $('#txt-example2-3').val();
-            $('#example2 ul').playSpin({
-                endNum: [num1, num2, num3],
-            });
-        });
-
-        $('#btn-example3-1').click(function () {
-            $('#example3 ul').playSpin({
-                stopSeq: 'leftToRight'
-            });
-        });
-
-        $('#btn-example3-2').click(function () {
-            $('#example3 ul').playSpin({
-                stopSeq: 'rightToLeft'
-            });
-        });
-
-        $('#btn-example4').click(function () {
-            $('#example4 ul').playSpin({
-                easing: 'easeOutBack'
-            });
-        });
-
-        $('#btn-example5').click(function () {
-            var time = $('#txt-example5').val();
-            if (time < 0 || time == '') {
-                time = 0;
-            }
-            $('#example5 ul').playSpin({
-                time: time,
-            });
-        });
-
         var sound = new Audio('sound/start.mp3');
         var ding = new Audio('sound/stop.mp3');
         sound.volume = 0.2;
@@ -880,7 +839,7 @@
         $('#btn-example6').click(function () {
             sound.play();
             $('#example6 ul').playSpin({
-                time: 50,
+                time: 500,
                 loops: 2,
                 endNum : [3,22,15],
                 stopSeq: 'leftToRight',
@@ -892,70 +851,6 @@
                 }
             });
 
-        });
-
-        $('#btn-example7').click(function () {
-            $('#lbl-example7-1').text('');
-            $('#lbl-example7-2').text('');
-            $('#example7 ul').playSpin({
-                onEnd: function (num) {
-                    $('#lbl-example7-1').text($('#lbl-example7-1').text() + num.toString());
-                },
-                onFinish: function (num) {
-                    $('#lbl-example7-2').text(num);
-                }
-            });
-        });
-
-        
-        $('#btn-example8').click(function () {
-            sound.play(); // Start play the sound after click button
-            $('#example8 ul').playSpin({
-                time: 2000,
-                endNum: getItem(),
-                stopSeq: 'rightToLeft',
-                onEnd: function () {
-                    ding.play(); // Play ding after each number is stopped
-                },
-                onFinish: function () {
-                    sound.pause(); // To stop the looping sound is pause it
-                }
-            });
-        });
-
-        $('#btn-example9-start').click(function () {
-            $('#example9 ul').playSpin({
-                manualStop: true
-            });
-        });
-
-        $('#btn-example9-stop').click(function () {
-            $('#example9 ul').stopSpin();
-        });
-
-        var numKeeptrack = 0;
-        $('#btn-example10-start').click(function () {
-            numKeeptrack = 3;
-            $('#example10 #first').playSpin({
-                manualStop: true
-            });
-            $('#example10 #second').playSpin({
-                manualStop: true
-            });
-            $('#example10 #third').playSpin({
-                manualStop: true
-            });
-        });
-
-        $('#btn-example10-stop').click(function () {
-            if (numKeeptrack == 3) {
-                $('#example10 #third').stopSpin();
-            } else if (numKeeptrack == 2) {
-                $('#example10 #second').stopSpin();
-            } else if (numKeeptrack == 1) {
-                $('#example10 #first').stopSpin();
-            }
-            numKeeptrack--;
         });
     </script>
 </body>
