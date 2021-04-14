@@ -43,24 +43,17 @@ class Item{
 var item1 = new Item("glove","path",0.9);
 var item2 = new Item("coat","path",0.6);
 var item3 = new Item("coat","path",0.4);
+var item4 = new Item("spear","path",0.2);
 
-function compare(a, b){
-    if(a.probability<b.probability){
-        return -1;
-    }
-    else if (a.probability>b.probability){
-        return 1;
-    }
-    return 0;
-}
+
 
 function print_value(a){
     console.log(a.probability);
 }
 
-var tree = new buckets.BSTree(compare);
-tree.add(item1);
-tree.add(item2);
-tree.add(item3);
-tree.inorderTraversal(print_value);
-console.log(tree.getRoot().probability)
+var tree = new AVLTree();
+tree.insert(0.9);
+tree.insert(0.6);
+tree.insert(0.4);
+tree.insert(0.2);
+tree.inOrder()
