@@ -32,28 +32,72 @@ var network = new vis.Network(container, data, options);
 });
 
 class Item{
-    constructor(name,img,probability){
+    constructor(name,img,probability,p1,p2){
         //img is path to picture
         this.name=name;
         this.img = img;
         this.probability = probability;
+        this.probRange = [p1,p2];
     }
 }
 
-var item1 = new Item("glove","path",0.9);
-var item2 = new Item("coat","path",0.6);
-var item3 = new Item("coat","path",0.4);
-var item4 = new Item("spear","path",0.2);
+var json = (function () {
+    var json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': './src/rates.json',
+        'dataType': "json",
+        'success': function (data) {
+            json = data;
+        }
+    });
+    return json;
+})();
 
-
+var compare = function (a, b) {
+	if (a.probability <= b.probability) {
+		return -1
+	} else if (a.probability > b.probability) {
+		return 1;
+	}
+    return 0;
+};
 
 function print_value(a){
-    console.log(a.probability);
+    console.log(a.name,a.probRange);
 }
 
-var tree = new AVLTree();
-tree.insert(0.9);
-tree.insert(0.6);
-tree.insert(0.4);
-tree.insert(0.2);
-tree.inOrder()
+var treemid = new AvlTree(compare);
+var treeleft = new AvlTree(compare);
+var treeright = new AvlTree(compare);
+
+function createTrees(pos,tree){
+    let tracker = 0.0;
+    for( var item in json[pos]["Item"]){
+        // console.log(item);
+        // console.log(json[pos]["Item"][item]);
+        let ratestring = json[pos]["Item"][item]["Rate"];
+        let partsArray = ratestring.split('%');
+        let subrate = ((parseFloat(partsArray[0]))/100.0)
+        let totalrate = subrate;
+        let item1 = new Item(item,"path",totalrate,tracker,totalrate+tracker);
+        tree.insert(item1);
+        tracker = tracker + totalrate;
+    } 
+}
+
+//0.9999999999999988 16 places of accuracy
+createTrees("Amid",treemid);
+createTrees("Bright",treeright);
+createTrees("Cleft",treeleft);
+
+function spinWheel(){
+    var items=[];
+    items.push(treeleft.getSpin(Math.random()));
+    items.push(treemid.getSpin(Math.random()));
+    items.push(treeright.getSpin(Math.random()));
+    return items;
+}
+console.log(spinWheel());
+// treeleft.forEach(print_value);
