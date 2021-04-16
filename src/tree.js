@@ -38,7 +38,7 @@ AvlTree.prototype._getSpin = function (element, node) {
 	if (node === null) {
 		return null;
 	}
-	var direction = getSpinCompare(element, node.element.probRange);
+	var direction = getSpinCompare(element, node);
 	if (direction < 0) {
 		return this._getSpin(element, node.left);
 	} else if (direction > 0) {
@@ -338,20 +338,19 @@ function getBalance(node) {
 }
 
 function getSpinCompare(a,b){
-   //a is a number and b is a range, arrays [p1,p2]
-   if(b[0]==0){
-      if(b[0]<=a<=b[1]){
+   //a is a number and b is a node
+//    console.log("Node : ", b.element.p1.toString(),b.element.p2.toString());
+   if(math.equal(b.element.p1,0.00)){
          return 0;
-      }    
    }
    else{
-      if(b[0]<a<=b[1]){
+      if(math.larger(math.bignumber(a),b.element.p1) && math.smallerEq(math.bignumber(a),b.element.p2)){
          return 0;
       }
-      else if (a<b[0]){
+      else if (math.smaller(math.bignumber(a),b.element.p1)){
          return -1;
       }
-      else if(a>b[1]){
+      else if(math.larger(math.bignumber(a),b.element.p2)){
          return 1;
       }
 
