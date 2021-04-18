@@ -1,35 +1,35 @@
-$(function() {
-// create an array with nodes
-var nodes = new vis.DataSet([
-    {id: 1, label: 'Node 1'},
-    {id: 2, label: 'Node 2'},
-    {id: 3, label: 'Node 3'},
-    {id: 4, label: 'Node 4'},
-    {id: 5, label: 'Node 5'}
-]);
+// $(function() {
+// // create an array with nodes
+// var nodes = new vis.DataSet([
+//     {id: 1, label: 'Node 1'},
+//     {id: 2, label: 'Node 2'},
+//     {id: 3, label: 'Node 3'},
+//     {id: 4, label: 'Node 4'},
+//     {id: 5, label: 'Node 5'}
+// ]);
 
-// create an array with edges
-var edges = new vis.DataSet([
-    {from: 1, to: 3},
-    {from: 1, to: 2},
-    {from: 2, to: 4},
-    {from: 2, to: 5}
-]);
+// // create an array with edges
+// var edges = new vis.DataSet([
+//     {from: 1, to: 3},
+//     {from: 1, to: 2},
+//     {from: 2, to: 4},
+//     {from: 2, to: 5}
+// ]);
 
-// create a network
-var container = document.getElementById('mynetwork');
+// // create a network
+// var container = document.getElementById('mynetwork');
 
-// provide the data in the vis format
-var data = {
-    nodes: nodes,
-    edges: edges
-};
-var options = {};
+// // provide the data in the vis format
+// var data = {
+//     nodes: nodes,
+//     edges: edges
+// };
+// var options = {};
 
-// initialize your network!
-var network = new vis.Network(container, data, options);
+// // initialize your network!
+// var network = new vis.Network(container, data, options);
 
-});
+// });
 
 math.config({
     number: 'BigNumber',      // Default type of number:
@@ -71,8 +71,20 @@ var compare = function (a, b) {
 	}
 };
 
+/**
+ * Helper function to output a value in the console. Value will be formatted.
+ * @param {*} value
+ */
+ function print (value) {
+    const precision = 16;
+    console.log(math.format(value, precision));
+  }
+  
+
 function print_value(a){
-    console.log(a.name,a.probRange);
+    console.log(a.name);
+    print(a.p1);
+    print(a.p2);
 }
 
 var treemid = new AvlTree(compare);
@@ -104,16 +116,10 @@ createTrees("Cleft",treeleft);
 
 function spinWheel(){
     var items=[];
-    var x = Math.random(1);
-    var y = Math.random(1);
-    var z = Math.random(1);
-    items.push(treeleft.getSpin(x));
-    items.push(treemid.getSpin(y));
-    items.push(treeright.getSpin(z));
-    console.log("this is x : ",x);
-    console.log("this is y : ",y);
-    console.log("this is z : ",z);
+    items.push(treeleft.getSpin(Math.random()));
+    items.push(treemid.getSpin(Math.random()));
+    items.push(treeright.getSpin(Math.random()));
     return items;
 }
-console.log(spinWheel());
 // treeleft.forEach(print_value);
+// console.log(spinWheel());

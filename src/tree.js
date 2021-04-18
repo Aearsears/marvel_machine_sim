@@ -31,7 +31,7 @@ AvlTree.prototype._search = function (element, node) {
 
 AvlTree.prototype.getSpin = function (element) {
 	var node = this._getSpin(element, this._root);
-	return node ? node.element.name : "ERROR ITEM";
+	return node ? node.element : "ERROR ITEM";
 };
 
 AvlTree.prototype._getSpin = function (element, node) {
@@ -339,22 +339,23 @@ function getBalance(node) {
 
 function getSpinCompare(a,b){
    //a is a number and b is a node
-//    console.log("Node : ", b.element.p1.toString(),b.element.p2.toString());
-   if(math.equal(b.element.p1,0.00)){
-         return 0;
-   }
-   else{
-      if(math.larger(math.bignumber(a),b.element.p1) && math.smallerEq(math.bignumber(a),b.element.p2)){
-         return 0;
-      }
-      else if (math.smaller(math.bignumber(a),b.element.p1)){
-         return -1;
-      }
-      else if(math.larger(math.bignumber(a),b.element.p2)){
-         return 1;
-      }
+	//console.log("Node : ", b.element.p1.toString(),b.element.p2.toString());
+	// [0,1) is teh range to generate random number
+	if(math.equal(b.element.p1,0.00)){
+		return 0;
+	}
+	else{
+		if(math.larger(math.bignumber(a),b.element.p1) && math.smallerEq(math.bignumber(a),b.element.p2)){
+			return 0;
+		}
+		else if (math.smaller(math.bignumber(a),b.element.p1)){
+			return -1;
+		}
+		else if(math.larger(math.bignumber(a),b.element.p2)){
+			return 1;
+		}
 
-   }
+	}
 
 }
 
