@@ -1,36 +1,3 @@
-// $(function() {
-// // create an array with nodes
-// var nodes = new vis.DataSet([
-//     {id: 1, label: 'Node 1'},
-//     {id: 2, label: 'Node 2'},
-//     {id: 3, label: 'Node 3'},
-//     {id: 4, label: 'Node 4'},
-//     {id: 5, label: 'Node 5'}
-// ]);
-
-// // create an array with edges
-// var edges = new vis.DataSet([
-//     {from: 1, to: 3},
-//     {from: 1, to: 2},
-//     {from: 2, to: 4},
-//     {from: 2, to: 5}
-// ]);
-
-// // create a network
-// var container = document.getElementById('mynetwork');
-
-// // provide the data in the vis format
-// var data = {
-//     nodes: nodes,
-//     edges: edges
-// };
-// var options = {};
-
-// // initialize your network!
-// var network = new vis.Network(container, data, options);
-
-// });
-
 math.config({
     number: 'BigNumber',      // Default type of number:
                               // 'number' (default), 'BigNumber', or 'Fraction'
@@ -110,9 +77,9 @@ function createTrees(pos,tree){
 //0.9999999999999988 16 places of accuracy
 //0.9800030656718224
 //0.8587292825373254
-createTrees("Amid",treemid);
-createTrees("Bright",treeright);
-createTrees("Cleft",treeleft);
+createTrees("mid",treemid);
+createTrees("right",treeright);
+createTrees("left",treeleft);
 
 function spinWheel(){
     var items=[];
@@ -121,5 +88,30 @@ function spinWheel(){
     items.push(treeright.getSpin(Math.random()));
     return items;
 }
+
+function checkitems(){
+    function print_valuel(a){
+        if(leftMap.get(a.name)==undefined){
+            console.log(a.name,leftMap.get(a.name));
+
+        }
+    }
+    function print_valuer(a){
+        if(rightMap.get(a.name)==undefined){
+            console.log(a.name,rightMap.get(a.name));
+
+        }
+    }
+    function print_valuem(a){
+        if(midMap.get(a.name)==undefined){
+            console.log(a.name,midMap.get(a.name));
+
+        }
+    }
+    treeleft.forEach(print_valuel);
+    treeright.forEach(print_valuer);
+    treemid.forEach(print_valuem);
+     }
+
 // treeleft.forEach(print_value);
 // console.log(spinWheel());

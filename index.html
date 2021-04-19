@@ -9,7 +9,7 @@
 
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -40,10 +40,14 @@
         <div class="panel panel-primary">
             <div class="panel-heading">Test your luck and wallet at the Marvel Machine! Dreams and money down the drain, another day for great pain!</div>
             <div class="panel-body">
-                <div class="slotwrapper" id="example6">
+                <div class="card-body" id = "congraluations">
+                    <h5 class="card-title text-center" id="rainbow-text">Congraluations!</h5>
+                </div>
+                <div class="slotwrapper" id="slot">
                     <ul id="left">
                             <li><img src="img/2021/5000-Maple-Point-Coupon.png" title="5,000 Maple Point Coupon" data-idx="10874"></li>
                             <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Accessory.png" title="9th Anniversary Prime Scroll for Accessory" data-idx="10848"></li>
+                            <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Armor.png" title="9th Anniversary Prime Scroll for Armor" data-idx="10850"></li>
                             <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Armor.png" data-idx="10851"></li>
                             <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-One-Handed-Weapon.png" title="9th Anniversary Prime Scroll for One-Handed Weapon" data-idx="10849"></li>
                             <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Two-Handed-Weapon.png" title="9th Anniversary Prime Scroll for Two-Handed Weapon" data-idx="10850"></li>
@@ -76,7 +80,7 @@
                             <li><img src="img/2021/Kerning-City-Hair-Coupon.png" title="Kerning City Hair Coupon" data-idx="10867"></li>
                             <li><img src="img/2021/Love-Potion.png" title="Love Potion (90 Day)" data-idx="10855"></li>
                             <li><img src="img/2021/Magnuss-Rage.png" title="Magnus's Rage" data-idx="10878"></li>
-                            <li><img src="img/2021/Marvelous.png" title="Marvelous" data-idx="10875"></li>
+                            <li><img src="img/2021/Marvelous.png" title="Marvelous Medal" data-idx="10875"></li>
                             <li><img src="img/2021/Nautilus-Hair-Coupon.png" title="Nautilus Hair Coupon" data-idx="10871"></li>
                             <li><img src="img/2021/Novel-Spunky-Evan-Hair-Coupon.png" title="Novel Spunky Evan Hair Coupon" data-idx="10865"></li>
                             <li><img src="img/2021/Onyx-Apple-(5).png" title="Onyx Apple (5)" data-idx="10828"></li>
@@ -265,7 +269,7 @@
                         <li><img src="img/2021/Dreaming-Lucid-Familiar.png"
                             title="Dreaming Lucid Familiar" data-idx="10641"></li>
                         <li><img src="img/2021/Electronic-Heart-O-Series.png"
-                            title="Electronic Heart O-Series" data-idx="10609"></li>
+                            title="Electronic Heart Omega-Series" data-idx="10609"></li>
                         <li><img src="img/2021/Firestarter-Ring-Coupon.png"
                             title="Firestarter Ring Coupon" data-idx="10625"></li>
                         <li><img src="img/2021/Gachapon-Ticket-(11).png"
@@ -568,13 +572,13 @@
                         <li><img src="img/2021/Red-Umbrella-Chair.png"
                             title="Red Umbrella Chair" data-idx="10718"></li>
                         <li><img src="img/2021/Rock-Spirits-Chair.png"
-                            title="Rock Spirits Chair " data-idx="10721"></li>
+                            title="Rock Spirits Chair" data-idx="10721"></li>
                         <li><img src="img/2021/Royal-Face-Coupon.png"
                             title="Royal Face Coupon" data-idx="10656"></li>
                         <li><img src="img/2021/Royal-Hair-Coupon.png"
                             title="Royal Hair Coupon" data-idx="10655"></li>
                         <li><img src="img/2021/Shared-Shelter-Umbrella.png"
-                            title="Shared Shelter Umbrella" data-idx="10716"></li>
+                            title="Shared Shelter Umbrella Chair" data-idx="10716"></li>
                         <li><img src="img/2021/Shield-Scroll.png"
                             title="Shield Scroll" data-idx="10663"></li>
                         <li><img src="img/2021/Sounds-of-Spring.png"
@@ -790,8 +794,9 @@
                     </ul>
                 </div>
                 <div class="text-center">
-                    <button type="button" class="btn btn-success btn-lg counter-plus" id="btn-example6">Start Spin!</button>
-                    <a class="btn btn-primary btn-xs" role="button" data-bs-toggle="collapse" href="#collapse-example6">
+                    <button type="button" class="btn btn-success btn-lg counter-plus" id="btn-slot">Start Spin!</button>
+                    <button type="button" class="btn btn-success btn-lg counter-plus-double" id="btn-double">Double Marvel!</button>
+                    <a class="btn btn-primary btn-xs" role="button" data-bs-toggle="collapse" href="#collapse-amount">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
                             <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
                             <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
@@ -799,25 +804,32 @@
                         View Amount Spent
                     </a>
                 </div>
-                <div class="collapse text-center" id="collapse-example6">
+                <div class="collapse text-center" id="collapse-amount">
                     <div class="card card-body">
                         <p>
                             Total NX spent:
                         </p>
                         <p class="counter-display-nx">
-                            
+                            <span>&#36;</span>
                         </p>
                         <p>
                             Total USD spent:
                         </p>
                         <p class="counter-display-cash">
-                            
+                            <span>&#36;</span>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
 
+        <div class="panel panel-primary">
+            <div class="panel-heading">Inventory</div>
+            <div class = "panel-body" id="inventory">
+
+            </div>
+
+        </div>
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -826,12 +838,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="src/math.js"></script>
     <script src="src/tree.js"></script>
-    <script src="src/prob_viz.js"></script>
     <script src="src/slotmachine.min.js"></script>
+    <script src="src/prob_viz.js"></script>
 
     <script type="text/javascript">
         var sound = new Audio('sound/start.mp3');
         var ding = new Audio('sound/stop.mp3');
+        let counterDisplayElemNx = document.querySelector('.counter-display-nx');
+        let counterDisplayElemCash = document.querySelector('.counter-display-cash');
+        let counterPlusElem = document.querySelector('.counter-plus');
+        let counterPlusElemDouble = document.querySelector('.counter-plus-double');
+        let countCash = 0;
+        let countNx = 0;
+        let doubmarcounter =false;
+        let left = document.getElementById('left');
+        let right = document.getElementById('right');
+        let mid = document.getElementById('mid');
+        let indexes = null;
         sound.volume = 0.2;
         // Loop of playing sound
         sound.addEventListener('ended', function () {
@@ -839,17 +862,62 @@
             this.play();
         }, false);
 
-        $('#btn-example6').click(function () {
+        $('#btn-slot').click(function () {
+            if ($('#slot ul').is(":animated")) return;
+            if($('#congraluations').is(":visible")){
+                $('#congraluations')[0].setAttribute("style","visibility:hidden");
+            }
+            if(indexes!=null){
+                    //add the items to the inventory
+                    for ( var i =0; i<indexes.length; i++){
+                        if(i==0){
+                            let clone = left.getElementsByTagName("li")[indexes[i]-1].cloneNode(true);
+                            document.getElementById('inventory').appendChild(clone);
+                            activatetooltips();
+                            
+                        }
+                        else if(i==1){
+                            let clone = mid.getElementsByTagName("li")[indexes[i]-1].cloneNode(true);
+                            document.getElementById('inventory').appendChild(clone);
+                            activatetooltips();
+                            
+                        }
+                        else{
+                            let clone = right.getElementsByTagName("li")[indexes[i]-1].cloneNode(true);
+                            document.getElementById('inventory').appendChild(clone);
+                            activatetooltips();
+                            
+                        }
+
+                    }
+                mid.getElementsByTagName("li")[indexes[1]-1].childNodes[0].removeAttribute("style");
+                right.getElementsByTagName("li")[indexes[2]-1].childNodes[0].removeAttribute("style");
+                left.getElementsByTagName("li")[indexes[0]-1].childNodes[0].removeAttribute("style"); 
+
+            }
             sound.play();
-            $('#example6 ul').playSpin({
-                time: 1,
+            countNx+=4900;
+            countCash+=4.9;
+            counterDisplayElemNx.innerHTML = (Math.round(countNx * 100) / 100).toLocaleString();
+            counterDisplayElemCash.innerHTML = "$".concat((Math.round(countCash * 100) / 100).toString());
+            doubmarcounter = false;
+            let x = getItem()
+            indexes =JSON.parse(JSON.stringify(x)); 
+            $('#slot ul').playSpin({
+                time: 5,
                 loops: 1,
-                endNum : getItem(),
-                stopSeq: 'leftToRight',
+                easing : 'easeOutBack',
+                endNum : x,
+                stopSeq: "rightToLeft",
                 onEnd: function () {
+                    //test(); // flash the item                     
                     ding.play(); // Play ding after each number is stopped
                 },
                 onFinish: function () {
+                    //test(); // display the congraluations banner
+                    $('#congraluations')[0].setAttribute("style","visibility:visible"); 
+
+
                     sound.pause(); // To stop the looping sound is pause it
                 }
             });
@@ -858,8 +926,13 @@
         // event = keyup or keydown
         document.addEventListener('keyup', event => {
         if (event.code === 'Space') {
+            if ($('#slot ul').is(":animated")) return; 
             sound.play();
-            $('#example6 ul').playSpin({
+            countNx+=4900;
+            countCash+=4.9;
+            counterDisplayElemNx.innerHTML = (Math.round(countNx * 100) / 100).toLocaleString();
+            counterDisplayElemCash.innerHTML = "$".concat((Math.round(countCash * 100) / 100).toString());
+            $('#slot ul').playSpin({
                 time: 1,
                 loops: 1,
                 endNum : getItem(),
@@ -873,6 +946,50 @@
             });
         }
         });
+        counterPlusElemDouble.addEventListener("click",()=>{
+            //1USD is 1000nx
+            //so 1000 nx is 1$ dollars
+            if ($('#slot ul').is(":animated")) return;
+            // if($('#slot ul')[0].getAttribute("data-playslot")== undefined || doubmarcounter==$('#slot ul')[0].getAttribute("data-playslot")){
+            //     console.log("You've already rolled for double Marvel!");
+            //     return;
+            // }
+            if(doubmarcounter==true){
+                    console.log("You've already rolled for double Marvel!");
+                    return;
+
+            }
+            var wheel = getDoubleMarvel();
+            if(wheel=="mid"){
+                mid.getElementsByTagName("li")[indexes[1]-1].childNodes[0].setAttribute("style","border: 5px groove rgb(250,0,0);");
+            }
+            else if (wheel=="right"){
+                right.getElementsByTagName("li")[indexes[2]-1].childNodes[0].setAttribute("style","border: 5px groove rgb(250,0,0);");
+                
+            }
+            else{
+                left.getElementsByTagName("li")[indexes[0]-1].childNodes[0].setAttribute("style","border: 5px groove rgb(250,0,0);");
+
+            }
+            countNx+=1000;
+            countCash+=1.0;
+            counterDisplayElemNx.innerHTML = (Math.round(countNx * 100) / 100).toLocaleString();
+            counterDisplayElemCash.innerHTML = "$".concat((Math.round(countCash * 100) / 100).toString());
+            doubmarcounter=true;
+        });
+        function sleep(milliseconds) {
+            const date = Date.now();
+            let currentDate = null;
+            do {
+                currentDate = Date.now();
+            } while (currentDate - date < milliseconds);
+            }
+        function activatetooltips(){
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+        }
     </script>
 </body>
 

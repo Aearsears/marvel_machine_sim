@@ -1,5 +1,5 @@
 {
-    "Amid":{
+    "mid":{
         "Category":{
             "Android"	:"0.930%",
             "Equipment"	:"15.840%",
@@ -134,14 +134,14 @@
             "Alicia's Mutated Staff"	:{"Category":"Equipment","Rate":		"0.090%"},
             "Lightseeker"	:{"Category":"Equipment","Rate":		"0.090%"},
             "Aquarius Crown"	:{"Category":"Equipment","Rate":		"0.060%"},
-            "100% 15-Star Enhancement (Lv. 150)"	:	{"Category":"Scroll","Rate":	"0.100%"},
-            "100% 15-Star Enhancement (Lv. 160)"	:	{"Category":"Scroll","Rate":	"0.100%"},
+            "100% 15 Star Enhancement (Lv. 150)"	:	{"Category":"Scroll","Rate":	"0.100%"},
+            "100% 15 Star Enhancement (Lv. 160)"	:	{"Category":"Scroll","Rate":	"0.100%"},
             "100% 17-Star Enhancement (Lv. 150)"	:	{"Category":"Scroll","Rate":	"0.050%"},
             "100% 17-Star Enhancement (Lv. 160)"	:	{"Category":"Scroll","Rate":	"0.050%"},
             "Lidium Heart"	:{"Category":"Android","Rate":		"0.400%"},
             "Superior Lidium Heart"	:{"Category":"Android","Rate":		"0.200%"},
             "Titanium Heart"	:{"Category":"Android","Rate":		"0.100%"},
-            "Electronic Heart Ω-Series"	:{"Category":"Android","Rate":		"0.200%"},
+            "Electronic Heart Omega-Series"	:{"Category":"Android","Rate":		"0.200%"},
             "Breath of Divinity"	:{"Category":"Equipment","Rate":		"0.010%"},
             "Lightning God Ring"	:{"Category":"Equipment","Rate":		"0.030%"},
             "Lucid's Earrings Coupon"	:{"Category":"Equipment","Rate":		"0.050%"},
@@ -191,7 +191,7 @@
 
     },
 
-    "Bright":{
+    "right":{
         "Category":{
             "Android"	:"5.100%",
             "Chair":"2.000%",
@@ -270,7 +270,7 @@
             "Red Umbrella Chair":{"Category":"Chair","Rate": 	"0.200%"},
             "Sounds of Spring Chair":{"Category":"Chair","Rate": 	"0.200%"},
             "Open Concert Chair":{"Category":"Chair","Rate": 	"0.200%"},
-            "Rock Spirits  Chair":{"Category":"Chair","Rate": 	"0.200%"},
+            "Rock Spirits Chair":{"Category":"Chair","Rate": 	"0.200%"},
             "9th Anniversary Prime Scroll for Accessory"	:	{"Category":"Scroll","Rate":	"0.400%"},
             "9th Anniversary Prime Scroll for One-Handed Weapon"	:	{"Category":"Scroll","Rate":	"0.400%"},
             "9th Anniversary Prime Scroll for Two-Handed Weapon"	:	{"Category":"Scroll","Rate":	"0.400%"},
@@ -347,7 +347,7 @@
             "Terminus Raider"	:{"Category":"Equipment","Rate":		"0.080%"},
             "Terminus Raptor"	:{"Category":"Equipment","Rate":		"0.080%"},
             "Terminus Scorcher"	:{"Category":"Equipment","Rate":		"0.080%"},
-            "Terminus GrandMaster" 	:{"Category":"Equipment","Rate":		"0.080%"},
+            "Terminus Grand Master" 	:{"Category":"Equipment","Rate":		"0.080%"},
             "Terminus Summoner"	:{"Category":"Equipment","Rate":		"0.080%"},
             "Terminus Psy-limiter"	:{"Category":"Equipment","Rate":		"0.080%"},
             "Terminus Chain"	:{"Category":"Equipment","Rate":		"0.080%"},
@@ -370,7 +370,7 @@
         }
     },
 
-    "Cleft":{
+    "left":{
         "Category":{
             "Pet"	:"1.300%",
             "Equipment"	:"2.360%",

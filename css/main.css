@@ -53,31 +53,36 @@ body {
         line-height: 100px;
     }
 }
-
-/* Example 10 override slotwrapper */
-#example10 {
-    height: 150px;
+#congraluations{
+    position: absolute;
+    top:10%;
+    width :100%;
+    visibility: hidden;
+    z-index: 5;
+    background-color:rgba(52, 58, 64, 0.8);
+    
 }
-#example10 ul {
-    width: 150px;
-    height:150px;
-    font-size: 150px;
-    line-height: 150px;
-}
-@media screen and (max-width: 1200px) {
-    #example10 ul {
-        width: 18%;
-    }
-}
-@media screen and (max-width: 768px) {
-    #example10 {
-        height: 100px;
-    }
-    #example10 ul {
-        height:100px;
-        font-size: 100px;
-        line-height: 100px;
-    }
+#inventory li{
+    display: inline;
 }
 
+#rainbow-text {
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+    font-size: 48px;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
 

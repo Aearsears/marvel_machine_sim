@@ -9,7 +9,7 @@
 
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/prob.css">
 </head>
 
 <body>
@@ -43,7 +43,14 @@
             </button>
           </h2>
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+            <div class="accordion-body">
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button type="button" class="btn btn-primary btn-lg" id="rightb">Right Wheel</button>
+                <button type="button" class="btn btn-primary btn-lg" id="midb">Middle Wheel</button>
+                <button type="button" class="btn btn-primary btn-lg" id="leftb">Left Wheel</button>
+              </div>
+
+            </div>
           </div>
         </div>
         <div class="accordion-item">
@@ -53,17 +60,770 @@
             </button>
           </h2>
           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+            <div class="accordion-body" id="items">                    
+              <ul id="left">
+              <li><img src="img/2021/5000-Maple-Point-Coupon.png" title="5,000 Maple Point Coupon" data-idx="10874"></li>
+              <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Accessory.png" title="9th Anniversary Prime Scroll for Accessory" data-idx="10848"></li>
+              <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Armor.png" title="9th Anniversary Prime Scroll for Armor" data-idx="10850"></li>
+              <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Armor.png" data-idx="10851"></li>
+              <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-One-Handed-Weapon.png" title="9th Anniversary Prime Scroll for One-Handed Weapon" data-idx="10849"></li>
+              <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Two-Handed-Weapon.png" title="9th Anniversary Prime Scroll for Two-Handed Weapon" data-idx="10850"></li>
+              <li><img src="img/2021/Ballroom-Classic-Hair-Coupon.png" title="Ballroom Classic Hair Coupon" data-idx="10866"></li>
+              <li><img src="img/2021/Beauty-Salon-Face-Slot-Coupon.png" title="Beauty Salon Face Slot Coupon" data-idx="10825"></li>
+              <li><img src="img/2021/Beauty-Salon-Hair-Slot-Coupon.png" title="Beauty Salon Hair Slot Coupon" data-idx="10824"></li>
+              <li><img src="img/2021/Bed-Head-Coupon-(M).png" title="Bed Head Coupon (M)" data-idx="10863"></li>
+              <li><img src="img/2021/Black-Cube.png" title="Black Cube" data-idx="10827"></li>
+              <li><img src="img/2021/Buff-Freezer-(5).png" title="Buff Freezer (5)" data-idx="10821"></li>
+              <li><img src="img/2021/Clean-Slate-Scroll-20perc-(2).png" title="Clean Slate Scroll 20% (2)" data-idx="10834"></li>
+              <li><img src="img/2021/Dragon-Khanjar.png" title="Dragon Khanjar" data-idx="10862"></li>
+              <li><img src="img/2021/Ellinia-Hair-Coupon.png" title="Ellinia Hair Coupon" data-idx="10869"></li>
+              <li><img src="img/2021/Epic-Potential-Scroll-50perc.png" title="Epic Potential Scroll 50%" data-idx="10835"></li>
+              <li><img src="img/2021/Equip-Tab-4-Slot-Coupon.png" title="Equip Tab 4 Slot Coupon" data-idx="10836"></li>
+              <li><img src="img/2021/Equip-Tab-8-Slot-Coupon.png" title="Equip Tab 8 Slot Coupon" data-idx="10840"></li>
+              <li><img src="img/2021/ETC-Tab-4-Slot-Coupon.png" title="ETC Tab 4 Slot Coupon" data-idx="10839"></li>
+              <li><img src="img/2021/Etc-Tab-8-Slot-Coupon.png" title="Etc Tab 8 Slot Coupon" data-idx="10843"></li>
+              <li><img src="img/2021/Eternal-Flame-of-Rebirth-(3).png" title="Eternal Flame of Rebirth (3)" data-idx="10845"></li>
+              <li><img src="img/2021/Evolution-One-handed-Weapon-ATT-Scroll-(2).png" title="Evolution One-handed Weapon ATT Scroll (2)" data-idx="10829"></li>
+              <li><img src="img/2021/Evolution-One-handed-Weapon-Magic-ATT-Scroll-(2).png" title="Evolution One-handed Weapon Magic ATT Scroll (2)" data-idx="10830"></li>
+              <li><img src="img/2021/Evolution-Two-handed-Weapon-ATT-Scroll-(2).png" title="Evolution Two-handed Weapon ATT Scroll (2)" data-idx="10831"></li>
+              <li><img src="img/2021/Evolution-Two-handed-Weapon-Magic-ATT-Scroll-(2).png" title="Evolution Two-handed Weapon Magic ATT Scroll (2)" data-idx="10832"></li>
+              <li><img src="img/2021/Fairy-King-Oberon-Hair-Coupon.png" title="Fairy King Oberon Hair Coupon" data-idx="10868"></li>
+              <li><img src="img/2021/Gachapon-Ticket.png" title="Gachapon Ticket" data-idx="10819"></li>
+              <li><img src="img/2021/Gorilla-Robo.png" title="Gorilla Robo (Permanent)" data-idx="10858"></li>
+              <li><img src="img/2021/Henesys-Hair-Coupon.png" title="Henesys Hair Coupon" data-idx="10870"></li>
+              <li><img src="img/2021/Hillas-Rage.png" title="Hilla's Rage" data-idx="10879"></li>
+              <li><img src="img/2021/Incredible-Chaos-Scroll-of-Goodness-50perc.png" title="Incredible Chaos Scroll of Goodness 50%" data-idx="10844"></li>
+              <li><img src="img/2021/Innocence-Scroll-50perc.png" title="Innocence Scroll 50%" data-idx="10833"></li>
+              <li><img src="img/2021/Kerning-City-Hair-Coupon.png" title="Kerning City Hair Coupon" data-idx="10867"></li>
+              <li><img src="img/2021/Love-Potion.png" title="Love Potion (90 Day)" data-idx="10855"></li>
+              <li><img src="img/2021/Magnuss-Rage.png" title="Magnus's Rage" data-idx="10878"></li>
+              <li><img src="img/2021/Marvelous.png" title="Marvelous Medal" data-idx="10875"></li>
+              <li><img src="img/2021/Nautilus-Hair-Coupon.png" title="Nautilus Hair Coupon" data-idx="10871"></li>
+              <li><img src="img/2021/Novel-Spunky-Evan-Hair-Coupon.png" title="Novel Spunky Evan Hair Coupon" data-idx="10865"></li>
+              <li><img src="img/2021/Onyx-Apple-(5).png" title="Onyx Apple (5)" data-idx="10828"></li>
+              <li><img src="img/2021/Powerful-Rebirth-Flame--(3).png" title="Powerful Rebirth Flame  (3)" data-idx="10846"></li>
+              <li><img src="img/2021/Pure-Equip-Enhancement-Scroll.png" title="Pure Equip Enhancement Scroll" data-idx="10852"></li>
+              <li><img src="img/2021/Pure-Equip-Enhancement-Scroll-(2).png" title="Pure Equip Enhancement Scroll (2)" data-idx="10853"></li>
+              <li><img src="img/2021/Red-Cube.png" title="Red Cube" data-idx="10820"></li>
+              <li><img src="img/2021/Red-Cube-(2).png" title="Red Cube (2)" data-idx="10826"></li>
+              <li><img src="img/2021/Respawn-Pass.png" title="Respawn Pass" data-idx="10823"></li>
+              <li><img src="img/2021/Robot.png" title="Robot (90 Day)" data-idx="10857"></li>
+              <li><img src="img/2021/Safety-Gem.png" title="Safety Gem" data-idx="10822"></li>
+              <li><img src="img/2021/Sea-lixir.png" title="Sea-lixir (90 Day)" data-idx="10854"></li>
+              <li><img src="img/2021/Set-up-Tab-4-Slot-Coupon.png" title="Set-up Tab 4 Slot Coupon" data-idx="10838"></li>
+              <li><img src="img/2021/Set-Up-Tab-8-Slot-Coupon.png" title="Set-Up Tab 8 Slot Coupon" data-idx="10842"></li>
+              <li><img src="img/2021/Soft-Petal-Skin-Android-Coupon.png" title="Soft Petal Skin Android Coupon" data-idx="10847"></li>
+              <li><img src="img/2021/Spell-Trace-5000-Coupon.png" title="Spell Trace 5,000 Coupon" data-idx="10872"></li>
+              <li><img src="img/2021/Tangy-Tonic.png" title="Tangy Tonic (90 Day)" data-idx="10856"></li>
+              <li><img src="img/2021/Tinkerers-Blue-Belt.png" title="Tinkerer's Blue Belt" data-idx="10876"></li>
+              <li><img src="img/2021/Tinkerers-Blue-Shoulder-Accessory.png" title="Tinkerer's Blue Shoulder Accessory" data-idx="10877"></li>
+              <li><img src="img/2021/Tinkerers-Chest.png" title="Tinkerer's Chest" data-idx="10818"></li>
+              <li><img src="img/2021/Use-Tab-4-Slot-Coupon.png" title="Use Tab 4 Slot Coupon" data-idx="10837"></li>
+              <li><img src="img/2021/Use-Tab-8-Slot-Coupon.png" title="Use Tab 8 Slot Coupon" data-idx="10841"></li>
+              <li><img src="img/2021/VIP-Magician-Shield.png" title="VIP Magician Shield" data-idx="10860"></li>
+              <li><img src="img/2021/VIP-Necklace.png" title="VIP Necklace" data-idx="10873"></li>
+              <li><img src="img/2021/VIP-Thief-Shield.png" title="VIP Thief Shield" data-idx="10861"></li>
+              <li><img src="img/2021/VIP-Warrior-Shield.png" title="VIP Warrior Shield" data-idx="10859"></li>
+              <li><img src="img/2021/Vivacious-Wavy-Hair-Coupon-(F).png" title="Vivacious Wavy Hair Coupon (F)" data-idx="10864"></li>
+              </ul>
+              <ul id="mid">
+                  <li><img src="img/2021/1-Million-Maple-Point-Chip.png"
+                      data-idx="10617" title="1 Million Maple Point Chip"></li>
+                  <li><img src="img/2021/100-15-Star-Enhancement-(Lv.-150).png"
+                      data-idx="10602" title="100% 15 Star Enhancement (Lv. 150)"></li>
+                  <li><img src="img/2021/100-15-Star-Enhancement-(Lv.-160).png"
+                      data-idx="10603" title="100% 15 Star Enhancement (Lv. 160)"></li>
+                  <li><img src="img/2021/100-17-Star-Enhancement-(Lv.-150).png"
+                      title="100% 17-Star Enhancement (Lv. 150)" data-idx="10604" title="100% 17 Star Enhancement (Lv. 150)"></li>
+                  <li><img src="img/2021/100-17-Star-Enhancement-(Lv.-160).png"
+                      title="100% 17-Star Enhancement (Lv. 160)" data-idx="10605" title="100% 17 Star Enhancement (Lv. 160)"></li>
+                  <li><img src="img/2021/100000-Maple-Point-Coupon.png"
+                      title="100,000 Maple Point Coupon" data-idx="10640"></li>
+                  <li><img src="img/2021/50000-Maple-Point-Coupon.png"
+                      title="50,000 Maple Point Coupon" data-idx="10513"></li>
+                  <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Accessory-(3).png"
+                      title="9th Anniversary Prime Scroll for Accessory (3)" data-idx="10502"></li>
+                  <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Armor-(3).png"
+                      title="9th Anniversary Prime Scroll for Armor (3)" data-idx="10505"></li>
+                  <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-One-Handed-Weapon-(3).png"
+                      title="9th Anniversary Prime Scroll for One-Handed Weapon (3)" data-idx="10503"></li>
+                  <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Two-Handed-Weapon-(3).png"
+                      title="9th Anniversary Prime Scroll for Two-Handed Weapon (3)" data-idx="10504"></li>
+                  <li><img src="img/2021/AbsoLab-Archer-Cape.png"
+                      title="AbsoLab Archer Cape" data-idx="10572"></li>
+                  <li><img src="img/2021/AbsoLab-Archer-Gloves.png"
+                      title="AbsoLab Archer Gloves" data-idx="10557"></li>
+                  <li><img src="img/2021/AbsoLab-Archer-Hood.png"
+                      title="AbsoLab Archer Hood" data-idx="10562"></li>
+                  <li><img src="img/2021/AbsoLab-Archer-Shoes.png"
+                      title="AbsoLab Archer Shoes" data-idx="10577"></li>
+                  <li><img src="img/2021/AbsoLab-Archer-Shoulder.png"
+                      title="AbsoLab Archer Shoulder" data-idx="10552"></li>
+                  <li><img src="img/2021/AbsoLab-Archer-Suit.png"
+                      title="AbsoLab Archer Suit" data-idx="10567"></li>
+                  <li><img src="img/2021/AbsoLab-Bandit-Cap.png"
+                      title="AbsoLab Bandit Cap" data-idx="10563"></li>
+                  <li><img src="img/2021/AbsoLab-Bandit-Cape.png"
+                      title="AbsoLab Bandit Cape" data-idx="10573"></li>
+                  <li><img src="img/2021/AbsoLab-Bandit-Gloves.png"
+                      title="AbsoLab Bandit Gloves" data-idx="10558"></li>
+                  <li><img src="img/2021/AbsoLab-Bandit-Shoes.png"
+                      title="AbsoLab Bandit Shoes" data-idx="10578"></li>
+                  <li><img src="img/2021/AbsoLab-Bandit-Suit.png"
+                      title="AbsoLab Bandit Suit" data-idx="10568"></li>
+                  <li><img src="img/2021/AbsoLab-Knight-Cape.png"
+                      title="AbsoLab Knight Cape" data-idx="10570"></li>
+                  <li><img src="img/2021/AbsoLab-Knight-Gloves.png"
+                      title="AbsoLab Knight Gloves" data-idx="10555"></li>
+                  <li><img src="img/2021/AbsoLab-Knight-Helm.png"
+                      title="AbsoLab Knight Helm" data-idx="10560"></li>
+                  <li><img src="img/2021/AbsoLab-Knight-Shoes.png"
+                      title="AbsoLab Knight Shoes" data-idx="10575"></li>
+                  <li><img src="img/2021/AbsoLab-Knight-Shoulder.png"
+                      title="AbsoLab Knight Shoulder" data-idx="10550"></li>
+                  <li><img src="img/2021/AbsoLab-Knight-Suit.png"
+                      title="AbsoLab Knight Suit" data-idx="10565"></li>
+                  <li><img src="img/2021/AbsoLab-Mage-Cape.png"
+                      title="AbsoLab Mage Cape" data-idx="10571"></li>
+                  <li><img src="img/2021/AbsoLab-Mage-Crown.png"
+                      title="AbsoLab Mage Crown" data-idx="10561"></li>
+                  <li><img src="img/2021/AbsoLab-Mage-Gloves.png"
+                      title="AbsoLab Mage Gloves" data-idx="10556"></li>
+                  <li><img src="img/2021/AbsoLab-Mage-Shoes.png"
+                      title="AbsoLab Mage Shoes" data-idx="10576"></li>
+                  <li><img src="img/2021/AbsoLab-Mage-Shoulder.png"
+                      title="AbsoLab Mage Shoulder" data-idx="10551"></li>
+                  <li><img src="img/2021/AbsoLab-Mage-Suit.png"
+                      title="AbsoLab Mage Suit" data-idx="10566"></li>
+                  <li><img src="img/2021/AbsoLab-Pirate-Cape.png"
+                      title="AbsoLab Pirate Cape" data-idx="10574"></li>
+                  <li><img src="img/2021/AbsoLab-Pirate-Fedora.png"
+                      title="AbsoLab Pirate Fedora" data-idx="10564"></li>
+                  <li><img src="img/2021/AbsoLab-Pirate-Gloves.png"
+                      title="AbsoLab Pirate Gloves" data-idx="10559"></li>
+                  <li><img src="img/2021/AbsoLab-Pirate-Shoes.png"
+                      title="AbsoLab Pirate Shoes" data-idx="10579"></li>
+                  <li><img src="img/2021/AbsoLab-Pirate-Shoulder.png"
+                      title="AbsoLab Pirate Shoulder" data-idx="10554"></li>
+                  <li><img src="img/2021/AbsoLab-Pirate-Suit.png"
+                      title="AbsoLab Pirate Suit" data-idx="10569"></li>
+                  <li><img src="img/2021/AbsoLab-Thief-Shoulder.png"
+                      title="AbsoLab Thief Shoulder" data-idx="10553"></li>
+                  <li><img src="img/2021/Alicias-Mutated-Staff.png"
+                      title="Alicia's Mutated Staff" data-idx="10599"></li>
+                  <li><img src="img/2021/All-Star-Face-Coupon.png"
+                      title="All-Star Face Coupon" data-idx="10480"></li>
+                  <li><img src="img/2021/All-Star-Hair-Coupon.png"
+                      title="All-Star Hair Coupon" data-idx="10479"></li>
+                  <li><img src="img/2021/Anniversary-Royal-Face-Coupon.png"
+                      title="Anniversary Royal Face Coupon" data-idx="10492"></li>
+                  <li><img src="img/2021/Anniversary-Royal-Hair-Coupon.png"
+                      title="Anniversary Royal Hair Coupon" data-idx="10491"></li>
+                  <li><img src="img/2021/Anniversary-Surprise-Style-Box.png"
+                      title="Anniversary Surprise Style Box" data-idx="10487"></li>
+                  <li><img src="img/2021/Aquarius-Crown.png"
+                      title="Aquarius Crown" data-idx="10601"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Archer-Cape.png"
+                      title="Arcane Umbra Archer Cape" data-idx="10592"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Archer-Gloves.png"
+                      title="Arcane Umbra Archer Gloves" data-idx="10587"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Archer-Shoes.png"
+                      title="Arcane Umbra Archer Shoes" data-idx="10581"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Knight-Cape.png"
+                      title="Arcane Umbra Knight Cape" data-idx="10590"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Knight-Gloves.png"
+                      title="Arcane Umbra Knight Gloves" data-idx="10585"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Knight-Shoes.png"
+                      title="Arcane Umbra Knight Shoes" data-idx="10582"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Mage-Cape.png"
+                      title="Arcane Umbra Mage Cape" data-idx="10591"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Mage-Gloves.png"
+                      title="Arcane Umbra Mage Gloves" data-idx="10586"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Mage-Shoes.png"
+                      title="Arcane Umbra Mage Shoes" data-idx="10580"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Pirate-Cape.png"
+                      title="Arcane Umbra Pirate Cape" data-idx="10594"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Pirate-Gloves.png"
+                      title="Arcane Umbra Pirate Gloves" data-idx="10589"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Pirate-Shoes.png"
+                      title="Arcane Umbra Pirate Shoes" data-idx="10584"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Thief-Cape.png"
+                      title="Arcane Umbra Thief Cape" data-idx="10593"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Thief-Gloves.png"
+                      title="Arcane Umbra Thief Gloves" data-idx="10588"></li>
+                  <li><img src="img/2021/Arcane-Umbra-Thief-Shoes.png"
+                      title="Arcane Umbra Thief Shoes" data-idx="10583"></li>
+                  <li><img src="img/2021/Battle-Roid-(F)-Coupon.png"
+                      title="Battle-Roid (F) Coupon" data-idx="10638"></li>
+                  <li><img src="img/2021/Battle-Roid-(M)-Coupon.png"
+                      title="Battle-Roid (M) Coupon" data-idx="10637"></li>
+                  <li><img src="img/2021/Black-Cube-(11).png"
+                      title="Black Cube (11)" data-idx="10514"></li>
+                  <li><img src="img/2021/Black-Cube-(5).png"
+                      title="Black Cube (5)" data-idx="10507"></li>
+                  <li><img src="img/2021/Black-Friday-Royal-Face-Coupon.png"
+                      title="Black Friday Royal Face Coupon" data-idx="10490"></li>
+                  <li><img src="img/2021/Black-Friday-Royal-Hair-Coupon.png"
+                      title="Black Friday Royal Hair Coupon" data-idx="10489"></li>
+                  <li><img src="img/2021/Black-Mage-Surprise-Style-Box.png"
+                      title="Black Mage Surprise Style Box" data-idx="10488"></li>
+                  <li><img src="img/2021/Bonus-Potential-Cube-(11).png"
+                      title="Bonus Potential Cube (11)" data-idx="10515"></li>
+                  <li><img src="img/2021/Bonus-Potential-Cube-(5).png"
+                      title="Bonus Potential Cube (5)" data-idx="10508"></li>
+                  <li><img src="img/2021/Breath-of-Divinity.png"
+                      title="Breath of Divinity" data-idx="10610"></li>
+                  <li><img src="img/2021/Cursed-Kaiserium.png"
+                      title="Cursed Kaiserium" data-idx="10616"></li>
+                  <li><img src="img/2021/Dark-Avenger-Totem.png"
+                      title="Dark Avenger Totem" data-idx="10621"></li>
+                  <li><img src="img/2021/Dark-Doom-Totem.png"
+                      title="Dark Doom Totem" data-idx="10620"></li>
+                  <li><img src="img/2021/Dark-Grin-Totem.png"
+                      title="Dark Grin Totem" data-idx="10623"></li>
+                  <li><img src="img/2021/Dark-Hellia-Totem.png"
+                      title="Dark Hellia Totem" data-idx="10622"></li>
+                  <li><img src="img/2021/Dreaming-Lucid-Familiar.png"
+                      title="Dreaming Lucid Familiar" data-idx="10641"></li>
+                  <li><img src="img/2021/Electronic-Heart-O-Series.png"
+                      title="Electronic Heart Omega-Series" data-idx="10609"></li>
+                  <li><img src="img/2021/Firestarter-Ring-Coupon.png"
+                      title="Firestarter Ring Coupon" data-idx="10625"></li>
+                  <li><img src="img/2021/Gachapon-Ticket-(11).png"
+                      title="Gachapon Ticket (11)" data-idx="10496"></li>
+                  <li><img src="img/2021/Gachapon-Ticket-(5).png"
+                      title="Gachapon Ticket (5)" data-idx="10481"></li>
+                  <li><img src="img/2021/Gachapon-Ticket-(50).png"
+                      title="Gachapon Ticket (50)" data-idx="10512"></li>
+                  <li><img src="img/2021/Golden-Hammer-100-Coupon-(2).png"
+                      title="Golden Hammer 100 % Coupon (2)" data-idx="10497"></li>
+                  <li><img src="img/2021/Halloween-Surprise-Style-Box.png"
+                      title="Halloween Surprise Style Box" data-idx="10485"></li>
+                  <li><img src="img/2021/Hunter-Totem.png"
+                      title="Hunter Totem" data-idx="10624"></li>
+                  <li><img src="img/2021/Hyper-Teleport-Rock-(7-Days).png"
+                      title="Hyper Teleport Rock (7 Days)" data-idx="10482"></li>
+                  <li><img src="img/2021/Incredible-Chaos-Scroll-of-Goodness-50perc-(3).png"
+                      title="Incredible Chaos Scroll of Goodness 50% (3)" data-idx="10493"></li>
+                  <li><img src="img/2021/King-of-Beasts-Hide.png"
+                      title="King of Beasts Hide" data-idx="10596"></li>
+                  <li><img src="img/2021/King-of-Beasts-Totem.png"
+                      title="King of Beasts Totem" data-idx="10597"></li>
+                  <li><img src="img/2021/Legendary-Potential-Scroll-50perc.png"
+                      title="Legendary Potential Scroll 50%" data-idx="10595"></li>
+                  <li><img src="img/2021/Lidium-Heart.png"
+                      title="Lidium Heart" data-idx="10606"></li>
+                  <li><img src="img/2021/Lightning-God-Ring.png"
+                      title="Lightning God Ring" data-idx="10611"></li>
+                  <li><img src="img/2021/Lightseeker.png"
+                      title="Lightseeker" data-idx="10600"></li>
+                  <li><img src="img/2021/Lil-Arkarium-Familiar.png"
+                      title="Lil Arkarium Familiar" data-idx="10644"></li>
+                  <li><img src="img/2021/Lil-Cygnus-Familiar.png"
+                      title="Lil Cygnus Familiar" data-idx="10647"></li>
+                  <li><img src="img/2021/Lil-Hilla-Familiar.png"
+                      title="Lil Hilla Familiar" data-idx="10643"></li>
+                  <li><img src="img/2021/Lil-Luminous-(Dark)-Familiar.png"
+                      title="Lil Luminous (Dark) Familiar" data-idx="10649"></li>
+                  <li><img src="img/2021/Lil-Luminous-(Equilibrium)-Familiar.png"
+                      title="Lil Luminous (Equilibrium) Familiar" data-idx="10650"></li>
+                  <li><img src="img/2021/Lil-Luminous-(Light)-Familiar.png"
+                      title="Lil Luminous (Light) Familiar" data-idx="10648"></li>
+                  <li><img src="img/2021/Lil-Magnus-Familiar.png"
+                      title="Lil Magnus Familiar" data-idx="10642"></li>
+                  <li><img src="img/2021/Lil-Mercedes-Familiar.png"
+                      title="Lil Mercedes Familiar" data-idx="10651"></li>
+                  <li><img src="img/2021/Lil-Moonbeam-Familiar.png"
+                      title="Lil Moonbeam Familiar" data-idx="10654"></li>
+                  <li><img src="img/2021/Lil-Orchid-Familiar.png"
+                      title="Lil Orchid Familiar" data-idx="10645"></li>
+                  <li><img src="img/2021/Lil-Phantom-Familiar.png"
+                      title="Lil Phantom Familiar" data-idx="10652"></li>
+                  <li><img src="img/2021/Lil-Shade-Familiar.png"
+                      title="Lil Shade Familiar" data-idx="10653"></li>
+                  <li><img src="img/2021/Lil-Von-Leon-Familiar.png"
+                      title="Lil Von Leon Familiar" data-idx="10646"></li>
+                  <li><img src="img/2021/Lucids-Earrings-Coupon.png"
+                      title="Lucid's Earrings Coupon" data-idx="10612"></li>
+                  <li><img src="img/2021/Meister-Earring.png"
+                      title="Meister Earring" data-idx="10522"></li>
+                  <li><img src="img/2021/Meister-Ring.png"
+                      title="Meister Ring" data-idx="10523"></li>
+                  <li><img src="img/2021/Meister-Shoulder.png"
+                      title="Meister Shoulder" data-idx="10521"></li>
+                  <li><img src="img/2021/Nodestone-(10).png"
+                      title="Nodestone (10)" data-idx="10498"></li>
+                  <li><img src="img/2021/Onyx-Apple-(50).png"
+                      title="Onyx Apple (50)" data-idx="10499"></li>
+                  <li><img src="img/2021/Outlaw-Heart.png"
+                      title="Outlaw Heart" data-idx="10639"></li>
+                  <li><img src="img/2021/Perfect-Innocence-Scroll.png"
+                      title="Perfect Innocence Scroll" data-idx="10500"></li>
+                  <li><img src="img/2021/Permanent-Hyper-Teleport-Rock-Coupon.png"
+                      title="Permanent Hyper Teleport Rock Coupon" data-idx="10511"></li>
+                  <li><img src="img/2021/Permanent-Pendant-Slot-Expansion-Coupon.png"
+                      title="Permanent Pendant Slot Expansion Coupon" data-idx="10613"></li>
+                  <li><img src="img/2021/Premium-Surprise-Style-Box.png"
+                      title="Premium Surprise Style Box" data-idx="10483"></li>
+                  <li><img src="img/2021/Reapers-Pendant.png"
+                      title="Reaper's Pendant" data-idx="10618"></li>
+                  <li><img src="img/2021/Red-Cube-(11).png"
+                      title="Red Cube (11)" data-idx="10506"></li>
+                  <li><img src="img/2021/Rifle-Bullet.png"
+                      title="Rifle Bullet" data-idx="10619"></li>
+                  <li><img src="img/2021/Royal-Face-Coupon-(3).png"
+                      title="Royal Face Coupon (3)" data-idx="10495"></li>
+                  <li><img src="img/2021/Royal-Hair-Coupon-(3).png"
+                      title="Royal Hair Coupon (3)" data-idx="10494"></li>
+                  <li><img src="img/2021/Ryudes-Sword.png"
+                      title="Ryude's Sword" data-idx="10598"></li>
+                  <li><img src="img/2021/Scarlet-Earring.png"
+                      title="Scarlet Earring" data-idx="10525"></li>
+                  <li><img src="img/2021/Scarlet-Ring.png"
+                      title="Scarlet Ring" data-idx="10524"></li>
+                  <li><img src="img/2021/Scarlet-Shoulder.png"
+                      title="Scarlet Shoulder" data-idx="10526"></li>
+                  <li><img src="img/2021/St.Patricks-Day-Surprise-Style-Box.png"
+                      title="St.Patrick's Day Surprise Style Box" data-idx="10486"></li>
+                  <li><img src="img/2021/Superior-Engraved-Gollux-Belt.png"
+                      title="Superior Engraved Gollux Belt" data-idx="10527"></li>
+                  <li><img src="img/2021/Superior-Engraved-Gollux-Pendant.png"
+                      title="Superior Engraved Gollux Pendant" data-idx="10528"></li>
+                  <li><img src="img/2021/Superior-Gollux-Earrings.png"
+                      title="Superior Gollux Earrings" data-idx="10529"></li>
+                  <li><img src="img/2021/Superior-Lidium-Heart.png"
+                      title="Superior Lidium Heart" data-idx="10607"></li>
+                  <li><img src="img/2021/Superior-Shielding-Ward.png"
+                      title="Superior Shielding Ward" data-idx="10501"></li>
+                  <li><img src="img/2021/The-Ring-of-Torment-Coupon.png"
+                      title="The Ring of Torment Coupon" data-idx="10626"></li>
+                  <li><img src="img/2021/Tinkerers-Black-Belt.png"
+                      title="Tinkerer's Black Belt" data-idx="10614"></li>
+                  <li><img src="img/2021/Tinkerers-Black-Shoulder-Accessory.png"
+                      title="Tinkerer's Black Shoulder Accessory" data-idx="10615"></li>
+                  <li><img src="img/2021/Titanium-Heart.png"
+                      title="Titanium Heart" data-idx="10608"></li>
+                  <li><img src="img/2021/Tyrant-Altair-Belt.png"
+                      title="Tyrant Altair Belt" data-idx="10549"></li>
+                  <li><img src="img/2021/Tyrant-Altair-Boots.png"
+                      title="Tyrant Altair Boots" data-idx="10544"></li>
+                  <li><img src="img/2021/Tyrant-Altair-Cloak.png"
+                      title="Tyrant Altair Cloak" data-idx="10539"></li>
+                  <li><img src="img/2021/Tyrant-Altair-Gloves.png"
+                      title="Tyrant Altair Gloves" data-idx="10534"></li>
+                  <li><img src="img/2021/Tyrant-Charon-Belt.png"
+                      title="Tyrant Charon Belt" data-idx="10547"></li>
+                  <li><img src="img/2021/Tyrant-Charon-Boots.png"
+                      title="Tyrant Charon Boots" data-idx="10542"></li>
+                  <li><img src="img/2021/Tyrant-Charon-Cloak.png"
+                      title="Tyrant Charon Cloak" data-idx="10537"></li>
+                  <li><img src="img/2021/Tyrant-Charon-Gloves.png"
+                      title="Tyrant Charon Gloves" data-idx="10532"></li>
+                  <li><img src="img/2021/Tyrant-Hermes-Belt.png"
+                      title="Tyrant Hermes Belt" data-idx="10546"></li>
+                  <li><img src="img/2021/Tyrant-Hermes-Boots.png"
+                      title="Tyrant Hermes Boots" data-idx="10541"></li>
+                  <li><img src="img/2021/Tyrant-Hermes-Cloak.png"
+                      title="Tyrant Hermes Cloak" data-idx="10536"></li>
+                  <li><img src="img/2021/Tyrant-Hermes-Gloves.png"
+                      title="Tyrant Hermes Gloves" data-idx="10531"></li>
+                  <li><img src="img/2021/Tyrant-Hyades-Belt.png"
+                      title="Tyrant Hyades Belt" data-idx="10545"></li>
+                  <li><img src="img/2021/Tyrant-Hyades-Boots.png"
+                      title="Tyrant Hyades Boots" data-idx="10540"></li>
+                  <li><img src="img/2021/Tyrant-Hyades-Cloak.png"
+                      title="Tyrant Hyades Cloak" data-idx="10535"></li>
+                  <li><img src="img/2021/Tyrant-Hyades-Gloves.png"
+                      title="Tyrant Hyades Gloves" data-idx="10530"></li>
+                  <li><img src="img/2021/Tyrant-Lycaon-Belt.png"
+                      title="Tyrant Lycaon Belt" data-idx="10548"></li>
+                  <li><img src="img/2021/Tyrant-Lycaon-Boots.png"
+                      title="Tyrant Lycaon Boots" data-idx="10543"></li>
+                  <li><img src="img/2021/Tyrant-Lycaon-Cloak.png"
+                      title="Tyrant Lycaon Cloak" data-idx="10538"></li>
+                  <li><img src="img/2021/Tyrant-Lycaon-Gloves.png"
+                      title="Tyrant Lycaon Gloves" data-idx="10533"></li>
+                  <li><img src="img/2021/Unique-Potential-Scroll-100perc.png"
+                      title="Unique Potential Scroll 100%" data-idx="10520"></li>
+                  <li><img src="img/2021/Unique-Potential-Scroll-60perc.png"
+                      title="Unique Potential Scroll 60%" data-idx="10510"></li>
+                  <li><img src="img/2021/Unique-Potential-Scroll-80perc.png"
+                      title="Unique Potential Scroll 80%" data-idx="10509"></li>
+                  <li><img src="img/2021/Valentine-Surprise-Style-Box.png"
+                      title="Valentine Surprise Style Box" data-idx="10484"></li>
+                  <li><img src="img/2021/Violet-Cube-(3).png"
+                      title="Violet Cube (3)" data-idx="10518"></li>
+                  <li><img src="img/2021/Violet-Cube-(5).png"
+                      title="Violet Cube (5)" data-idx="10519"></li>
+                  <li><img src="img/2021/White-Cube-(3).png"
+                      title="White Cube (3)" data-idx="10516"></li>
+                  <li><img src="img/2021/White-Cube-(5).png"
+                      title="White Cube (5)" data-idx="10517"></li>
+                  <li><img src="img/2021/X-Accessory-Attack-Scroll.png"
+                      title="X Accessory Attack Scroll" data-idx="10633"></li>
+                  <li><img src="img/2021/X-Accessory-Magic-ATT-Scroll.png"
+                      title="X Accessory Magic ATT Scroll" data-idx="10634"></li>
+                  <li><img src="img/2021/X-Armor-Attack-Scroll.png"
+                      title="X Armor Attack Scroll" data-idx="10631"></li>
+                  <li><img src="img/2021/X-Armor-Magic-ATT-Scroll.png"
+                      title="X Armor Magic ATT Scroll" data-idx="10632"></li>
+                  <li><img src="img/2021/X-One-Handed-Weapon-Attack-Scroll.png"
+                      title="X One-Handed Weapon Attack Scroll" data-idx="10627"></li>
+                  <li><img src="img/2021/X-One-Handed-Weapon-Magic-ATT-Scroll.png"
+                      title="X One-Handed Weapon Magic ATT Scroll" data-idx="10628"></li>
+                  <li><img src="img/2021/X-Pet-Equipment-Attack-Scroll.png"
+                      title="X Pet Equipment Attack Scroll" data-idx="10635"></li>
+                  <li><img src="img/2021/X-Pet-Equipment-Magic-ATT-Scroll.png"
+                      title="X Pet Equipment Magic ATT Scroll" data-idx="10636"></li>
+                  <li><img src="img/2021/X-Two-Handed-Weapon-Attack-Scroll.png"
+                      title="X Two-Handed Weapon Attack Scroll" data-idx="10629"></li>
+                  <li><img src="img/2021/X-Two-Handed-Weapon-Magic-ATT-Scroll.png"
+                      title="X Two-Handed Weapon Magic ATT Scroll" data-idx="10630"></li>
+
+              </ul>
+              <ul id="right">
+                  <li><img src="img/2021/1-day-2x-EXP-Special-coupon.png"
+                      title="1-day 2x EXP Special Coupon" data-idx="10662"></li>
+                  <li><img src="img/2021/10000-Maple-Point-Chip.png"
+                      data-idx="10807" title="10,000 Maple Point Chip"></li>
+                  <li><img src="img/2021/20-Slot-Chair-Bag.png"
+                      title="20 Slot Chair Bag" data-idx="10675"></li>
+                  <li><img src="img/2021/20-Slot-Herb-Bag.png"
+                      title="20 Slot Herb Bag" data-idx="10671"></li>
+                  <li><img src="img/2021/20-Slot-Mineral-Bag.png"
+                      title="20 Slot Mineral Bag" data-idx="10672"></li>
+                  <li><img src="img/2021/20-Slot-Production-Bag.png"
+                      title="20 Slot Production Bag" data-idx="10673"></li>
+                  <li><img src="img/2021/20-Slot-Recipe-Bag.png"
+                      title="20 Slot Recipe Bag" data-idx="10674"></li>
+                  <li><img src="img/2021/20-Slot-Scroll-Bag.png"
+                      title="20 Slot Scroll Bag" data-idx="10677"></li>
+                  <li><img src="img/2021/20-Slot-Soul-Bag.png"
+                      title="20 Slot Soul Bag" data-idx="10670"></li>
+                  <li><img src="img/2021/20-Slot-title-Bag.png"
+                      title="20 Slot Title Bag" data-idx="10676"></li>
+                  <li><img src="img/2021/25000-Maple-Point-Coupon.png"
+                      title="25,000 Maple Point Coupon" data-idx="10808"></li>
+                  <li><img src="img/2021/2x-Drop-Coupon-(1-Hour)--(6).png"
+                      title="2x Drop Coupon (1 Hour)  (6)" data-idx="10660"></li>
+                  <li><img src="img/2021/2x-EXP-Coupon-(1-Hour)--(6).png"
+                      title="2x EXP Coupon (1 Hour)  (6)" data-idx="10659"></li>
+                  <li><img src="img/2021/4-hour-2x-Drop-Special-Coupon.png"
+                      title="4-hour 2x Drop Special Coupon" data-idx="10665"></li>
+                  <li><img src="img/2021/4-hour-2x-EXP-Special-Coupon.png"
+                      title="4-hour 2x EXP Special Coupon" data-idx="10661"></li>
+                  <li><img src="img/2021/40-Slot-Chair-Bag.png"
+                      title="40 Slot Chair Bag" data-idx="10678"></li>
+                  <li><img src="img/2021/40-Slot-Soul-Bag.png"
+                      title="40-Slot Soul Bag" data-idx="10679"></li>
+                  <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Accessory.png"
+                      title="9th Anniversary Prime Scroll for Accessory" data-idx="10722"></li>
+                  <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Armor.png"
+                      title="9th Anniversary Prime Scroll for Armor" data-idx="10725"></li>
+                  <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-One-Handed-Weapon.png"
+                      title="9th Anniversary Prime Scroll for One-Handed Weapon" data-idx="10723"></li>
+                  <li><img src="img/2021/9th-Anniversary-Prime-Scroll-for-Two-Handed-Weapon.png"
+                      title="9th Anniversary Prime Scroll for Two-Handed Weapon" data-idx="10724"></li>
+                  <li><img src="img/2021/Animal-Crystal-Ball-Chair.png"
+                      title="Animal Crystal Ball Chair" data-idx="10715"></li>
+                  <li><img src="img/2021/April-Fools-Day-Face-Coupon.png"
+                      title="April Fools' Day Face Coupon" data-idx="10658"></li>
+                  <li><img src="img/2021/April-Fools-Day-Hair-Coupon.png"
+                      title="April Fools' Day Hair Coupon" data-idx="10657"></li>
+                  <li><img src="img/2021/Beast-Tamer-Transparent-Ears.png"
+                      title="Beast Tamer Transparent Ears" data-idx="10708"></li>
+                  <li><img src="img/2021/Beast-Tamer-Transparent-Tail.png"
+                      title="Beast Tamer Transparent Tail" data-idx="10709"></li>
+                  <li><img src="img/2021/Bonus-Potential-Cube.png"
+                      title="Bonus Potential Cube" data-idx="10666"></li>
+                  <li><img src="img/2021/Chaos-Scroll-of-Goodness-50perc.png"
+                      title="Chaos Scroll of Goodness 50%" data-idx="10668"></li>
+                  <li><img src="img/2021/Dominator-Pendant.png"
+                      title="Dominator Pendant" data-idx="10726"></li>
+                  <li><img src="img/2021/Epic-Potential-Scroll-50perc-(3).png"
+                      title="Epic Potential Scroll 50% (3)" data-idx="10683"></li>
+                  <li><img src="img/2021/Eternal-Flame-of-Rebirth-(5).png"
+                      title="Eternal Flame of Rebirth (5)" data-idx="10684"></li>
+                  <li><img src="img/2021/Fantastical-Android-(F)-Coupon.png"
+                      title="Fantastical Android (F) Coupon" data-idx="10688"></li>
+                  <li><img src="img/2021/Fantastical-Android-(M)-Coupon.png"
+                      title="Fantastical Android (M) Coupon" data-idx="10687"></li>
+                  <li><img src="img/2021/Gachapon-Ticket-(5).png"
+                      title="Gachapon Ticket (5)" data-idx="10710"></li>
+                  <li><img src="img/2021/Golden-Hammer-100-Coupon.png"
+                      title="Golden Hammer 100% Coupon" data-idx="10693"></li>
+                  <li><img src="img/2021/Guardian-Scroll.png"
+                      title="Guardian Scroll" data-idx="10664"></li>
+                  <li><img src="img/2021/Innocence-Scroll-50perc-(3).png"
+                      title="Innocence Scroll 50% (3)" data-idx="10682"></li>
+                  <li><img src="img/2021/Magnificent-Cygnus-Soul.png"
+                      title="Magnificent Cygnus Soul" data-idx="10815"></li>
+                  <li><img src="img/2021/Magnificent-Damien-Soul.png"
+                      title="Magnificent Damien Soul" data-idx="10812"></li>
+                  <li><img src="img/2021/Magnificent-Darknell-Soul.png"
+                      title="Magnificent Darknell Soul" data-idx="10811"></li>
+                  <li><img src="img/2021/Magnificent-Lotus-Soul.png"
+                      title="Magnificent Lotus Soul" data-idx="10813"></li>
+                  <li><img src="img/2021/Magnificent-Lucid-Soul.png"
+                      title="Magnificent Lucid Soul" data-idx="10816"></li>
+                  <li><img src="img/2021/Magnificent-Magnus-Soul.png"
+                      title="Magnificent Magnus Soul" data-idx="10814"></li>
+                  <li><img src="img/2021/Magnificent-Will-Soul.png"
+                      title="Magnificent Will Soul" data-idx="10817"></li>
+                  <li><img src="img/2021/Onyx-Apple-(25).png"
+                      title="Onyx Apple (25)" data-idx="10694"></li>
+                  <li><img src="img/2021/Open-Concert-Chair.png"
+                      title="Open Concert Chair" data-idx="10720"></li>
+                  <li><img src="img/2021/Pink-Beans-Adventure-Stories-Chair.png"
+                      title="Pink Bean's Adventure Stories Chair" data-idx="10714"></li>
+                  <li><img src="img/2021/Platinum-Scissors-of-Karma.png"
+                      title="Platinum Scissors of Karma" data-idx="10686"></li>
+                  <li><img src="img/2021/Powerful-Rebirth-Flame--(5).png"
+                      title="Powerful Rebirth Flame  (5)" data-idx="10685"></li>
+                  <li><img src="img/2021/Premium-Surprise-Style-Box-(2).png"
+                      title="Premium Surprise Style Box (2)" data-idx="10711"></li>
+                  <li><img src="img/2021/Princessoid-Coupon.png"
+                      title="Princessoid Coupon" data-idx="10691"></li>
+                  <li><img src="img/2021/Red-Cube-(2).png"
+                      title="Red Cube (2)" data-idx="10667"></li>
+                  <li><img src="img/2021/Red-Umbrella-Chair.png"
+                      title="Red Umbrella Chair" data-idx="10718"></li>
+                  <li><img src="img/2021/Rock-Spirits-Chair.png"
+                      title="Rock Spirits Chair" data-idx="10721"></li>
+                  <li><img src="img/2021/Royal-Face-Coupon.png"
+                      title="Royal Face Coupon" data-idx="10656"></li>
+                  <li><img src="img/2021/Royal-Hair-Coupon.png"
+                      title="Royal Hair Coupon" data-idx="10655"></li>
+                  <li><img src="img/2021/Shared-Shelter-Umbrella.png"
+                      title="Shared Shelter Umbrella Chair" data-idx="10716"></li>
+                  <li><img src="img/2021/Shield-Scroll.png"
+                      title="Shield Scroll" data-idx="10663"></li>
+                  <li><img src="img/2021/Sounds-of-Spring.png"
+                      title="Sounds of Spring Chair" data-idx="10719"></li>
+                  <li><img src="img/2021/Special-Bonus-Potential-Scroll.png"
+                      title="Special Bonus Potential Scroll" data-idx="10669"></li>
+                  <li><img src="img/2021/Spring-Rain-Chair.png"
+                      title="Spring Rain Chair" data-idx="10713"></li>
+                  <li><img src="img/2021/Summeroid-(F)-Coupon.png"
+                      title="Summeroid (F) Coupon" data-idx="10690"></li>
+                  <li><img src="img/2021/Summeroid-(M)-Coupon.png"
+                      title="Summeroid (M) Coupon" data-idx="10689"></li>
+                  <li><img src="img/2021/Sweetwater-Ancient-Bow.png"
+                      title="Sweetwater Ancient Bow" data-idx="10769"></li>
+                  <li><img src="img/2021/Sweetwater-Axe.png"
+                      title="Sweetwater Axe" data-idx="10745"></li>
+                  <li><img src="img/2021/Sweetwater-Belt.png"
+                      title="Sweetwater Belt" data-idx="10734"></li>
+                  <li><img src="img/2021/Sweetwater-Bladecaster.png"
+                      title="Sweetwater Bladecaster" data-idx="10771"></li>
+                  <li><img src="img/2021/Sweetwater-Bow.png"
+                      title="Sweetwater Bow" data-idx="10757"></li>
+                  <li><img src="img/2021/Sweetwater-Cane.png"
+                      title="Sweetwater Cane" data-idx="10749"></li>
+                  <li><img src="img/2021/Sweetwater-Cape.png"
+                      title="Sweetwater Cape" data-idx="10727"></li>
+                  <li><img src="img/2021/Sweetwater-Chain.png"
+                      title="Sweetwater Chain" data-idx="10766"></li>
+                  <li><img src="img/2021/Sweetwater-Chain-Sword.png"
+                      title="Sweetwater Chain Sword" data-idx="10741"></li>
+                  <li><img src="img/2021/Sweetwater-Crossbow.png"
+                      title="Sweetwater Crossbow" data-idx="10758"></li>
+                  <li><img src="img/2021/Sweetwater-Demon-Sword.png"
+                      title="Sweetwater Demon Sword" data-idx="10740"></li>
+                  <li><img src="img/2021/Sweetwater-Earrings.png"
+                      title="Sweetwater Earrings" data-idx="10732"></li>
+                  <li><img src="img/2021/Sweetwater-Gauntlet-Buster.png"
+                      title="Sweetwater Gauntlet Buster" data-idx="10768"></li>
+                  <li><img src="img/2021/Sweetwater-Gloves.png"
+                      title="Sweetwater Gloves" data-idx="10728"></li>
+                  <li><img src="img/2021/Sweetwater-Grip.png"
+                      title="Sweetwater Grip" data-idx="10760"></li>
+                  <li><img src="img/2021/Sweetwater-Hand-Cannon.png"
+                      title="Sweetwater Hand Cannon" data-idx="10763"></li>
+                  <li><img src="img/2021/Sweetwater-Hat.png"
+                      title="Sweetwater Hat" data-idx="10729"></li>
+                  <li><img src="img/2021/Sweetwater-Katana.png"
+                      title="Sweetwater Katana" data-idx="10764"></li>
+                  <li><img src="img/2021/Sweetwater-Katara.png"
+                      title="Sweetwater Katara" data-idx="10748"></li>
+                  <li><img src="img/2021/Sweetwater-Knife.png"
+                      title="Sweetwater Knife" data-idx="10747"></li>
+                  <li><img src="img/2021/Sweetwater-Lucent-Gauntlet.png"
+                      title="Sweetwater Lucent Gauntlet" data-idx="10767"></li>
+                  <li><img src="img/2021/Sweetwater-Mace.png"
+                      title="Sweetwater Mace" data-idx="10746"></li>
+                  <li><img src="img/2021/Sweetwater-Maul.png"
+                      title="Sweetwater Maul" data-idx="10754"></li>
+                  <li><img src="img/2021/Sweetwater-Monocle.png"
+                      title="Sweetwater Monocle" data-idx="10731"></li>
+                  <li><img src="img/2021/Sweetwater-Pendant.png"
+                      title="Sweetwater Pendant" data-idx="10730"></li>
+                  <li><img src="img/2021/Sweetwater-Polearm.png"
+                      title="Sweetwater Polearm" data-idx="10756"></li>
+                  <li><img src="img/2021/Sweetwater-Psy-limiter.png"
+                      title="Sweetwater Psy-limiter" data-idx="10743"></li>
+                  <li><img src="img/2021/Sweetwater-Ritual-Fan.png"
+                      title="Sweetwater Ritual Fan" data-idx="10770"></li>
+                  <li><img src="img/2021/Sweetwater-Shining-Rod.png"
+                      title="Sweetwater Shining Rod" data-idx="10738"></li>
+                  <li><img src="img/2021/Sweetwater-Shoes.png"
+                      title="Sweetwater Shoes" data-idx="10737"></li>
+                  <li><img src="img/2021/Sweetwater-Shooter.png"
+                      title="Sweetwater Shooter" data-idx="10761"></li>
+                  <li><img src="img/2021/Sweetwater-Shoulder.png"
+                      title="Sweetwater Shoulder" data-idx="10735"></li>
+                  <li><img src="img/2021/Sweetwater-Soul-Shooter.png"
+                      title="Sweetwater Soul Shooter" data-idx="10739"></li>
+                  <li><img src="img/2021/Sweetwater-Spear.png"
+                      title="Sweetwater Spear" data-idx="10755"></li>
+                  <li><img src="img/2021/Sweetwater-Staff.png"
+                      title="Sweetwater Staff" data-idx="10751"></li>
+                  <li><img src="img/2021/Sweetwater-Steer.png"
+                      title="Sweetwater Steer" data-idx="10759"></li>
+                  <li><img src="img/2021/Sweetwater-Suit.png"
+                      title="Sweetwater Suit" data-idx="10736"></li>
+                  <li><img src="img/2021/Sweetwater-Sword.png"
+                      title="Sweetwater Sword" data-idx="10744"></li>
+                  <li><img src="img/2021/Sweetwater-Tattoo.png"
+                      title="Sweetwater Tattoo" data-idx="10733"></li>
+                  <li><img src="img/2021/Sweetwater-Tigress-Scepter.png"
+                      title="Sweetwater Tigress Scepter" data-idx="10742"></li>
+                  <li><img src="img/2021/Sweetwater-Twin-Angels.png"
+                      title="Sweetwater Twin Angels" data-idx="10762"></li>
+                  <li><img src="img/2021/Sweetwater-Two-Handed-Axe.png"
+                      title="Sweetwater Two-Handed Axe" data-idx="10753"></li>
+                  <li><img src="img/2021/Sweetwater-Two-Handed-Sword.png"
+                      title="Sweetwater Two-Handed Sword" data-idx="10752"></li>
+                  <li><img src="img/2021/Sweetwater-Wand.png"
+                      title="Sweetwater Wand" data-idx="10750"></li>
+                  <li><img src="img/2021/Sweetwater-Wind.png"
+                      title="Sweetwater Wind" data-idx="10765"></li>
+                  <li><img src="img/2021/Teddy-Bear-Kitchen-Window-Chair.png"
+                      title="Teddy Bear Kitchen Window Chair" data-idx="10717"></li>
+                  <li><img src="img/2021/Terminus-Ancient-Bow.png"
+                      title="Terminus Ancient Bow" data-idx="10804"></li>
+                  <li><img src="img/2021/Terminus-Bladecaster.png"
+                      title="Terminus Bladecaster" data-idx="10806"></li>
+                  <li><img src="img/2021/Terminus-Bolter.png"
+                      title="Terminus Bolter" data-idx="10792"></li>
+                  <li><img src="img/2021/Terminus-Chain.png"
+                      title="Terminus Chain" data-idx="10801"></li>
+                  <li><img src="img/2021/Terminus-Chopper.png"
+                      title="Terminus Chopper" data-idx="10779"></li>
+                  <li><img src="img/2021/Terminus-Crusher.png"
+                      title="Terminus Crusher" data-idx="10780"></li>
+                  <li><img src="img/2021/Terminus-Defender.png"
+                      title="Terminus Defender" data-idx="10772"></li>
+                  <li><img src="img/2021/Terminus-Demolisher.png"
+                      title="Terminus Demolisher" data-idx="10788"></li>
+                  <li><img src="img/2021/Terminus-Devastator.png"
+                      title="Terminus Devastator" data-idx="10787"></li>
+                  <li><img src="img/2021/Terminus-Divider.png"
+                      title="Terminus Divider" data-idx="10778"></li>
+                  <li><img src="img/2021/Terminus-Dominator.png"
+                      title="Terminus Dominator" data-idx="10786"></li>
+                  <li><img src="img/2021/Terminus-Enchanter.png"
+                      title="Terminus Enchanter" data-idx="10784"></li>
+                  <li><img src="img/2021/Terminus-Executioner.png"
+                      title="Terminus Executioner" data-idx="10793"></li>
+                  <li><img src="img/2021/Terminus-Firebreather.png"
+                      title="Terminus Firebreather" data-idx="10774"></li>
+                  <li><img src="img/2021/Terminus-Gauntlet.png"
+                      title="Terminus Gauntlet" data-idx="10803"></li>
+                  <li><img src="img/2021/Terminus-Grand-Master.png"
+                      title="Terminus Grand Master" data-idx="10798"></li>
+                  <li><img src="img/2021/Terminus-Illuminator.png"
+                      title="Terminus Illuminator" data-idx="10773"></li>
+                  <li><img src="img/2021/Terminus-Impaler.png"
+                      title="Terminus Impaler" data-idx="10789"></li>
+                  <li><img src="img/2021/Terminus-Jaeger.png"
+                      title="Terminus Jaeger" data-idx="10776"></li>
+                  <li><img src="img/2021/Terminus-Lucent-Gauntlet.png"
+                      title="Terminus Lucent Gauntlet" data-idx="10802"></li>
+                  <li><img src="img/2021/Terminus-Mesmerizer.png"
+                      title="Terminus Mesmerizer" data-idx="10785"></li>
+                  <li><img src="img/2021/Terminus-Orchestrator.png"
+                      title="Terminus Orchestrator" data-idx="10783"></li>
+                  <li><img src="img/2021/Terminus-Prowler.png"
+                      title="Terminus Prowler" data-idx="10781"></li>
+                  <li><img src="img/2021/Terminus-Psy-limiter.png"
+                      title="Terminus Psy-limiter" data-idx="10800"></li>
+                  <li><img src="img/2021/Terminus-Raider.png"
+                      title="Terminus Raider" data-idx="10795"></li>
+                  <li><img src="img/2021/Terminus-Raptor.png"
+                      title="Terminus Raptor" data-idx="10796"></li>
+                  <li><img src="img/2021/Terminus-Ritual-Fan.png"
+                      title="Terminus Ritual Fan" data-idx="10805"></li>
+                  <li><img src="img/2021/Terminus-Scepter.png"
+                      title="Terminus Scepter" data-idx="10777"></li>
+                  <li><img src="img/2021/Terminus-Scorcher.png"
+                      title="Terminus Scorcher" data-idx="10797"></li>
+                  <li><img src="img/2021/Terminus-Silencer.png"
+                      title="Terminus Silencer" data-idx="10782"></li>
+                  <li><img src="img/2021/Terminus-Stormchaser.png"
+                      title="Terminus Stormchaser" data-idx="10791"></li>
+                  <li><img src="img/2021/Terminus-Striker.png"
+                      title="Terminus Striker" data-idx="10794"></li>
+                  <li><img src="img/2021/Terminus-Summoner.png"
+                      title="Terminus Summoner" data-idx="10799"></li>
+                  <li><img src="img/2021/Terminus-Vanquisher.png"
+                      title="Terminus Vanquisher" data-idx="10775"></li>
+                  <li><img src="img/2021/Terminus-Warmonger.png"
+                      title="Terminus Warmonger" data-idx="10790"></li>
+                  <li><img src="img/2021/Tinkerers-Red-Belt.png"
+                      title="Tinkerer's Red Belt" data-idx="10809"></li>
+                  <li><img src="img/2021/Tinkerers-Red-Shoulder-Accessory.png"
+                      title="Tinkerer's Red Shoulder Accessory" data-idx="10810"></li>
+                  <li><img src="img/2021/Transparent-Cape.png"
+                      title="Transparent Cape" data-idx="10695"></li>
+                  <li><img src="img/2021/Transparent-Claw.png"
+                      title="Transparent Claw" data-idx="10704"></li>
+                  <li><img src="img/2021/Transparent-Earrings.png"
+                      title="Transparent Earrings" data-idx="10698"></li>
+                  <li><img src="img/2021/Transparent-Eye-Accessory.png"
+                      title="Transparent Eye Accessory" data-idx="10700"></li>
+                  <li><img src="img/2021/Transparent-Face-Accessory.png"
+                      title="Transparent Face Accessory" data-idx="10701"></li>
+                  <li><img src="img/2021/Transparent-Gloves.png"
+                      title="Transparent Gloves" data-idx="10696"></li>
+                  <li><img src="img/2021/Transparent-Hat.png"
+                      title="Transparent Hat" data-idx="10699"></li>
+                  <li><img src="img/2021/Transparent-Katara.png"
+                      title="Transparent Katara" data-idx="10703"></li>
+                  <li><img src="img/2021/Transparent-Knuckle.png"
+                      title="Transparent Knuckle" data-idx="10705"></li>
+                  <li><img src="img/2021/Transparent-Shield.png"
+                      title="Transparent Shield" data-idx="10707"></li>
+                  <li><img src="img/2021/Transparent-Shoes.png"
+                      title="Transparent Shoes" data-idx="10697"></li>
+                  <li><img src="img/2021/Transparent-Wand.png"
+                      title="Transparent Wand" data-idx="10706"></li>
+                  <li><img src="img/2021/Universal-Transparent-Weapon.png"
+                      title="Universal Transparent Weapon" data-idx="10702"></li>
+                  <li><img src="img/2021/Violet-Cube.png"
+                      title="Violet Cube" data-idx="10681"></li>
+                  <li><img src="img/2021/Waterwheel-Chair.png"
+                      title="Waterwheel Chair" data-idx="10712"></li>
+                  <li><img src="img/2021/White-Cube.png"
+                      title="White Cube" data-idx="10680"></li>
+                  <li><img src="img/2021/Zero-Android-Coupon.png"
+                      title="Zero Android Coupon" data-idx="10692"></li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingThree">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-              Accordion Item #3
+              Item Details
             </button>
           </h2>
           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+            <div class="accordion-body" >
+              <span id="flush-collapseThree-accordion-body">
+
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +840,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="src/math.js"></script>
     <script src="src/tree.js"></script>
+    <script src="src/slotmachine.min.js"></script>
     <script src="src/prob_viz.js"></script>
+    <script src="src/viz.js"></script>
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 
     <script type="text/javascript">

@@ -1,0 +1,21 @@
+body {
+    margin-top: 0px;
+}
+
+#flush-collapseTwo .accordion-body ul li{
+    display: inline;
+}
+#left{
+    display:none;
+}
+#mid{
+    display:none;
+    
+}
+#right{
+    display:none;
+
+}
+#flush-collapseThree-accordion-body{
+    display: block;
+}
