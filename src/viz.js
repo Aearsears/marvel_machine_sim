@@ -68,21 +68,12 @@ $('#items ul li img').on("click",function (event) {
     // console.log("clicked");
     // console.log($(event.target)[0].title);
     //delete previous child nodes
-    var childNodes = document.getElementById('flush-collapseThree-accordion-body').childNodes;
-
-    childNodes.forEach(function(entry) 
-    {
-        if(entry.textContent!='')
-        {
-            entry.textContent =" ";
-        //entry.remove(); //for remove 
-        }
-        else{
-            entry.remove();
-        }
-        
-    });
-    var collapseElementList = [].slice.call(document.querySelectorAll('.collapse'));
+    let childNodes = document.getElementById('flush-collapseThree-accordion-body').childNodes;
+    let element = document.getElementById('flush-collapseThree-accordion-body');
+    while(childNodes.length!=0){
+        element.removeChild(childNodes[0]);
+    }
+    let collapseElementList = [].slice.call(document.querySelectorAll('.collapse'));
     new bootstrap.Collapse(collapseElementList[2]);
     // // if ($('#slot ul').is(":animated")) return;
     // // if($('#congraluations').is(":visible")){
@@ -92,12 +83,14 @@ $('#items ul li img').on("click",function (event) {
     //append text into flush-collapseThree
     let br = document.createElement("br");
     let img = document.createElement("img");
-    let t1 = document.createTextNode("Name: "+ $(event.target)[0].ariaLabel);
-    let t2 = document.createTextNode("Probability: "+ json[$(event.target)[0].parentNode.parentNode.id]["Item"][$(event.target)[0].ariaLabel]["Rate"]);
+    let t1 =document.createElement("p");
+    t1.innerHTML = "Name: "+ $(event.target)[0].ariaLabel;
+    let t2 =document.createElement("p");
+    t2.innerHTML = "Probability: "+ json[$(event.target)[0].parentNode.parentNode.id]["Item"][$(event.target)[0].ariaLabel]["Rate"];
     img.src=$(event.target)[0].attributes[0].nodeValue;
     document.getElementById('flush-collapseThree-accordion-body').appendChild(img);
     document.getElementById('flush-collapseThree-accordion-body').appendChild(t1);
-    document.getElementById('flush-collapseThree-accordion-body').appendChild(br);
+    // document.getElementById('flush-collapseThree-accordion-body').appendChild(br);
     document.getElementById('flush-collapseThree-accordion-body').appendChild(t2);
 });
 
