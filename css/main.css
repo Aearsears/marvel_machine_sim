@@ -1,5 +1,10 @@
 body {
     margin-top: 0px;
+    background-color: #e9ecef;
+}
+.card-body{
+    background-color: #e9ecef;
+
 }
 
 .slotwrapper {
@@ -20,6 +25,9 @@ body {
     line-height: 200px;
     text-align: center;
 }
+.slotwrapper ul li {
+    background-image: linear-gradient(180deg, rgba(69,69,70,1) 0%, rgba(255,255,255,1) 49%, rgba(73,71,71,1) 100%);
+}
 .slotwrapper ul li img {
     vertical-align: middle;
 }
@@ -32,6 +40,15 @@ body {
 }
 #right{
     width:33%
+}
+#btn-slot{
+    background-color: #483C6B;
+}
+#btn-double{
+    background-color: #483C6B;
+}
+#btn-amount{
+    background-color: #9D83EB;
 }
 
 

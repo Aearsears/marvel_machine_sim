@@ -1,33 +1,48 @@
 $(function() {
-// create an array with nodes
-var nodes = new vis.DataSet([
-    {id: 1, label: 'Node 1'},
-    {id: 2, label: 'Node 2'},
-    {id: 3, label: 'Node 3'},
-    {id: 4, label: 'Node 4'},
-    {id: 5, label: 'Node 5'}
-]);
+var network = null;
+function createNodes(num){
+    var x=[];
+    for(var i=0;i<num;i++){
+        if(i==num-1){
+            
+            x.push({id:i,color:'red'});
+        }
+        else{
+            x.push({id:i});
+        }
+    }
+    
+    var nodes= new vis.DataSet(x);
+    if(document.getElementById('vis-network')!=null){
+        network.setData({nodes});
+    }
+    else{
+        var container = document.getElementById('mynetwork');
+        var data = {
+            nodes: nodes,
+        };
+        var options = {
+            height:'100%',
+            width: '100%'
+        };
+        network = new vis.Network(container, data, options);
 
-// create an array with edges
-var edges = new vis.DataSet([
-    {from: 1, to: 3},
-    {from: 1, to: 2},
-    {from: 2, to: 4},
-    {from: 2, to: 5}
-]);
-
+    }
+}
+// createNodes(30);
 // create a network
-var container = document.getElementById('mynetwork');
+
 
 // provide the data in the vis format
-var data = {
-    nodes: nodes,
-    edges: edges
-};
-var options = {};
+
 
 // initialize your network!
-var network = new vis.Network(container, data, options);
+
+function closeModal(modal) {
+    $(modal).on('shown.bs.modal', function(e) {
+        $(modal).modal("hide");
+    });
+}
 
 //event listeners for accordion
 $('#rightb').on("click",function () {
@@ -38,7 +53,9 @@ $('#rightb').on("click",function () {
     // if($('#congraluations').is(":visible")){
         //     $('#congraluations')[0].setAttribute("style","visibility:hidden");
         // }
-    new bootstrap.Collapse(collapseElementList[2]);
+        new bootstrap.Collapse(collapseElementList[2]);
+    $('#left')[0].setAttribute("style","display:none");
+    $('#mid')[0].setAttribute("style","display:none");
     $('#right')[0].setAttribute("style","display:inline");
 });
 $('#leftb').on("click",function () {
@@ -50,6 +67,8 @@ $('#leftb').on("click",function () {
         //     $('#congraluations')[0].setAttribute("style","visibility:hidden");
         // }
         new bootstrap.Collapse(collapseElementList[2]);
+        $('#right')[0].setAttribute("style","display:none");
+        $('#mid')[0].setAttribute("style","display:none");
         $('#left')[0].setAttribute("style","display:inline");
     });
 $('#midb').on("click",function () {
@@ -61,6 +80,8 @@ $('#midb').on("click",function () {
         //     $('#congraluations')[0].setAttribute("style","visibility:hidden");
         // }
         new bootstrap.Collapse(collapseElementList[2]);
+        $('#right')[0].setAttribute("style","display:none");
+        $('#left')[0].setAttribute("style","display:none");
         $('#mid')[0].setAttribute("style","display:inline");
 });
 
@@ -92,7 +113,17 @@ $('#items ul li img').on("click",function (event) {
     document.getElementById('flush-collapseThree-accordion-body').appendChild(t1);
     // document.getElementById('flush-collapseThree-accordion-body').appendChild(br);
     document.getElementById('flush-collapseThree-accordion-body').appendChild(t2);
+
+    let p = json[$(event.target)[0].parentNode.parentNode.id]["Item"][$(event.target)[0].ariaLabel]["Rate"];
+    p = parseFloat(p.split("%")[0]);
+    var myModal = new bootstrap.Modal(document.getElementById('myModal'));
+    myModal.show();
+    createNodes(Math.round(100/p));
+    closeModal('#myModal');
+        
+
 });
+
 
 
 
