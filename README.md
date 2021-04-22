@@ -6,10 +6,15 @@ Probabilities, images, sound are from the official website.
 # Packages
 ## Javascript
 [math.js](https://mathjs.org/)
+
 [AVL Tree for probability tree](https://github.com/mauriciosantos/Buckets-JS)
+
 [jQuery](https://jquery.com/)
+
 [jQuery slot machine](https://github.com/momokang/slotmachine)
+
 [graph](https://visjs.org/)
+
 [Bootstrap framework](https://getbootstrap.com/)
 ## Python
 [Beautiful Soup 4](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
