@@ -3,7 +3,6 @@ math.config({
                               // 'number' (default), 'BigNumber', or 'Fraction'
     precision: 64             // Number of significant digits for BigNumbers
   })
-  
 
 class Item{
     constructor(name,img,probability,p1,p2){
@@ -47,7 +46,6 @@ var compare = function (a, b) {
     console.log(math.format(value, precision));
   }
   
-
 function print_value(a){
     console.log(a.name);
     print(a.p1);
@@ -74,9 +72,6 @@ function createTrees(pos,tree){
     } 
 }
 
-//0.9999999999999988 16 places of accuracy
-//0.9800030656718224
-//0.8587292825373254
 createTrees("mid",treemid);
 createTrees("right",treeright);
 createTrees("left",treeleft);
@@ -93,25 +88,19 @@ function checkitems(){
     function print_valuel(a){
         if(leftMap.get(a.name)==undefined){
             console.log(a.name,leftMap.get(a.name));
-
         }
     }
     function print_valuer(a){
         if(rightMap.get(a.name)==undefined){
             console.log(a.name,rightMap.get(a.name));
-
         }
     }
     function print_valuem(a){
         if(midMap.get(a.name)==undefined){
             console.log(a.name,midMap.get(a.name));
-
         }
     }
     treeleft.forEach(print_valuel);
     treeright.forEach(print_valuer);
     treemid.forEach(print_valuem);
-     }
-
-// treeleft.forEach(print_value);
-// console.log(spinWheel());
+}

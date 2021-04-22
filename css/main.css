@@ -43,12 +43,15 @@ body {
 }
 #btn-slot{
     background-color: #483C6B;
+    border: none;
 }
 #btn-double{
     background-color: #483C6B;
+    border: none;
 }
 #btn-amount{
     background-color: #9D83EB;
+    border: none;
 }
 
 
@@ -72,7 +75,7 @@ body {
 }
 #congraluations{
     position: absolute;
-    top:10%;
+    top:8%;
     width :100%;
     visibility: hidden;
     z-index: 5;
