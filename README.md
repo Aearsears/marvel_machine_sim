@@ -1,5 +1,5 @@
 # marvel_machine_sim
-Roll the marvel machine and test your luck! After seeing tons of people waste their hard earned money on trying to defy numbers which do not waver, I decided to code up a simulator so that I too could get the adrenaline rush of losing it all.
+Roll the Maplestory marvel machine and test your luck! After seeing tons of people waste their hard earned money on trying to defy numbers which do not waver, I decided to code up a simulator so that I too could get the adrenaline rush of losing it all.
 
 Probabilities, images, sound are from the official website.
 
