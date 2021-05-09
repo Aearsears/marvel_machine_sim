@@ -119,9 +119,6 @@ $('#items ul li img').on("click",function (event) {
     let t1 =document.createElement("p");
     t1.innerHTML = "Name: "+ $(event.target)[0].title;
     let t2 =document.createElement("p");
-
-    console.log("left2".replace("2", ""));
-
     t2.innerHTML = "Probability: "+ json[($(event.target)[0].parentNode.parentNode.id).replace(2, "")]["Item"][$(event.target)[0].title]["Rate"];
     img.src=$(event.target)[0].attributes[0].nodeValue;
     document.getElementById('flush-collapseThree-accordion-body').appendChild(img);

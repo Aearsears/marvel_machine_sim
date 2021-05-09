@@ -1,6 +1,7 @@
 body {
     margin-top: 0px;
     background-color: #e9ecef;
+    padding-top: 76px;
 }
 .card-body{
     background-color: #e9ecef;
@@ -106,6 +107,7 @@ body {
     }
 }
 
+/* Navbar */
 .navigator-bar {
     background-color: rgb(97, 96, 96);
     font-size: 1.6rem;
@@ -153,15 +155,8 @@ body {
     background-color: rgb(12, 129, 184);
 }
 
-body {
-    padding-top: 76px;
-}
 
-.footer-bar {
-    background-color: rgb(99, 98, 98);
-    color: white;
-}
-
+/** Network */
 .network-display {
     display: flex;
     justify-content: center;
