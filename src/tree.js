@@ -56,7 +56,7 @@ AvlTree.prototype.insert = function (element) {
 //TODO: allow duplicates
 AvlTree.prototype._insert = function (element, node) {
 	if (node === null) {
-		return new Node(element);
+		return new TreeNode(element);
 	}
 	var direction = this._compare(element, node.element);
 	if (direction < 0) {
@@ -303,7 +303,7 @@ AvlTree.prototype._getElementsAtDepth = function (targetDepth, current, node, fo
 	this._getElementsAtDepth(targetDepth, current + 1, node.right, foundNodes);
 };
 
-function Node(element) {
+function TreeNode(element) {
 	this.element = element;
 	this.height = 1;
 	this.left   = null;
@@ -339,7 +339,7 @@ function getBalance(node) {
 
 function getSpinCompare(a,b){
    //a is a number and b is a node
-	//console.log("Node : ", b.element.p1.toString(),b.element.p2.toString());
+	//console.log("TreeNode : ", b.element.p1.toString(),b.element.p2.toString());
 	// [0,1) is teh range to generate random number
 	if(math.equal(b.element.p1,0.00)){
 		return 0;
