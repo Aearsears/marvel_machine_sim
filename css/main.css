@@ -106,3 +106,58 @@ body {
     }
 }
 
+.navigator-bar {
+    background-color: rgb(97, 96, 96);
+    font-size: 1.6rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.7rem;
+}
+
+.navigator-bar h1 {
+    color: white;
+}
+
+.navigator-bar a {
+    color: black;
+}
+
+.navigator-bar .container-contents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.navigator-bar .container-contents .nav {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator-bar .container-contents .nav .nav-item {
+    padding-left: 0.1rem;
+    padding-right: 0.1rem;
+}
+
+.navigator-bar .container-contents .external {
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigator-bar .container-contents .active {
+    background-color: rgb(49, 164, 218);
+}
+
+.navigator-bar .container-contents .nav-link:hover {
+    background-color: rgb(12, 129, 184);
+}
+
+body {
+    padding-top: 76px;
+}
+
+.footer-bar {
+    background-color: rgb(99, 98, 98);
+    color: white;
+}
