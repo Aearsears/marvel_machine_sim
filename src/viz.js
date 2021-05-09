@@ -117,16 +117,19 @@ $('#items ul li img').on("click",function (event) {
     let br = document.createElement("br");
     let img = document.createElement("img");
     let t1 =document.createElement("p");
-    t1.innerHTML = "Name: "+ $(event.target)[0].ariaLabel;
+    t1.innerHTML = "Name: "+ $(event.target)[0].title;
     let t2 =document.createElement("p");
-    t2.innerHTML = "Probability: "+ json[$(event.target)[0].parentNode.parentNode.id]["Item"][$(event.target)[0].ariaLabel]["Rate"];
+
+    //console.log(json[$(event.target)[0].parentNode.parentNode.id]["Item"][$(event.target)[0].title]["Rate"]);
+
+    t2.innerHTML = "Probability: "+ json[$(event.target)[0].parentNode.parentNode.id]["Item"][$(event.target)[0].title]["Rate"];
     img.src=$(event.target)[0].attributes[0].nodeValue;
     document.getElementById('flush-collapseThree-accordion-body').appendChild(img);
     document.getElementById('flush-collapseThree-accordion-body').appendChild(t1);
     // document.getElementById('flush-collapseThree-accordion-body').appendChild(br);
     document.getElementById('flush-collapseThree-accordion-body').appendChild(t2);
 
-    let p = json[$(event.target)[0].parentNode.parentNode.id]["Item"][$(event.target)[0].ariaLabel]["Rate"];
+    let p = json[$(event.target)[0].parentNode.parentNode.id]["Item"][$(event.target)[0].title]["Rate"];
     p = parseFloat(p.split("%")[0]);
     var myModal = new bootstrap.Modal(document.getElementById('myModal'));
     myModal.show();

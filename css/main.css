@@ -161,3 +161,15 @@ body {
     background-color: rgb(99, 98, 98);
     color: white;
 }
+
+.network-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mynetwork {
+    background-color: rgb(196, 235, 235);
+    height: 1000px;
+    width: 80%;
+}
