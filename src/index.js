@@ -70,6 +70,10 @@ $('#btn-slot').click(function () {
             //test(); // display the congraluations banner
             $('#congraluations')[0].setAttribute("style","visibility:visible"); 
             sound.pause(); // To stop the looping sound is pause it
+
+            setTimeout(function() {
+                $('#congraluations')[0].setAttribute("style", "visibility:hidden");
+            }, 3000);
         }
     });
 
