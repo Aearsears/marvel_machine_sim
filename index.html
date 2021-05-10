@@ -16,34 +16,46 @@
     <!-- nav -->
     <section class="navigator">
 
-        <nav class="container-fluid navigator-bar fixed-top">
-            <div class="container-contents">
+        <!-- custom styling should go in '.navigator-bar' for this -->
+        <nav class="navbar navbar-expand-lg navbar-dark container-fluid fixed-top navigator-bar">
+            <div class="container-fluid">
                 <h1>Marvel Machine Simulator</h1>
-                <div class="internal">
-                    <ul class="nav nav-pills" id="pills-tab">
-                        <li class="nav-item">
-                            <button class="nav-link active" id="simul-tab" data-bs-toggle="pill" data-bs-target="#simul" type="button" aria-controls="simul" aria-selected="true">Simulator</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" id="probVis-tab" data-bs-toggle="pill" data-bs-target="#probVis" type="button" aria-controls="probVis" aria-selected="false">Visualizer</button>
-                        </li>
-                    </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#dropdown" aria-controls="dropdown" aria-expanded="false" aria-label="Toggle dropdown">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- items to show on the dropdown menu when the size gets too small 
+                    by default the button is not shown and no collapse is displayed when the width is large enough-->
+                <div class="collapse navbar-collapse" id="dropdown">
+                    <div class="internal"> <!-- navigate through the site -->
+                        <ul class="nav nav-pills" id="pills-tab">
+                            <li class="nav-item">
+                                <button class="nav-link active" id="simul-tab" data-bs-toggle="pill" data-bs-target="#simul" type="button" aria-controls="simul" aria-selected="true">Simulator</button>
+                            </li>
+                            <li class="nav-item">
+                                <button class="nav-link" id="probVis-tab" data-bs-toggle="pill" data-bs-target="#probVis" type="button" aria-controls="probVis" aria-selected="false">Visualizer</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="external"> <!-- links to external sites -->
+                        <ul class="nav nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://github.com/Aearsears/marvel_machine_sim">Github</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="external">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/Aearsears/marvel_machine_sim">Github</a>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
         </nav>
 
     </section>
+    <!-- nav end-->
+
 
 
     <!-- content -->
-    <section class="tab-content">
+    <section class="tab-content container-fluid">
         <!-- tab1 -->
         <div class="tab-pane show active" id="simul">
             <div class="container-fluid">
