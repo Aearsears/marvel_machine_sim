@@ -142,6 +142,11 @@ body {
     width: 100%;
 }
 
+.navigator-bar .nav-menu .nav-pills .nav-item {
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+}
+
 .navigator-bar .nav-menu .nav-pills .nav-item:last-child {
     margin-left: auto;
 }

@@ -25,9 +25,10 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- items to show on the dropdown menu when the size gets too small 
-                    by default the button is not shown and no collapse is displayed when the width is large enough-->
-                <div class="collapse navbar-collapse nav-menu" id="dropdown">
+                <!-- default: the button is not shown and no collapse is displayed when the width is large enough-->
+                <div class="navbar-collapse nav-menu" id="dropdown"> <!-- adding class ".collapse" to this div will cause a bug where the visualizer
+                    does not automatically open the second menu after selecting a wheel
+                    if other problems happen because of the dependency on collapse class, put it back -->
                     <ul class="nav nav-pills" id="pills-tab">
                         <li class="nav-item">
                             <button class="nav-link active" id="simul-tab" data-bs-toggle="pill" data-bs-target="#simul" type="button" aria-controls="simul" aria-selected="true">Simulator</button>
@@ -43,7 +44,7 @@
             </div>
         </nav>
 
-    </section>
+    </section> 
     <!-- nav end-->
 
 
