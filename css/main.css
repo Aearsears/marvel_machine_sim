@@ -147,6 +147,10 @@ body {
     margin-right: 0.3rem;
 }
 
+.navigator-bar .nav-menu .nav-pills .nav-item .active {
+    background-color: var(--secondary);
+}
+
 .navigator-bar .nav-menu .nav-pills .nav-item:last-child {
     margin-left: auto;
 }
@@ -176,6 +180,15 @@ body {
     }
 }
 
+/** Tab1 */
+#simul .panel-heading {
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+}
+
 /** Network */
 .network-display {
     display: flex;
@@ -184,7 +197,21 @@ body {
 }
 
 #mynetwork {
-    background-color: rgb(85, 160, 167);
+    background-color: var(--primary);
     height: 1000px;
     width: 75%;
+}
+
+/** Buttons */
+
+#btn-slot {
+    background-color: var(--secondary);
+}
+
+#btn-double {
+    background-color: var(--secondary);
+}
+
+#btn-amount {
+    background-color: var(--secondary);
 }
