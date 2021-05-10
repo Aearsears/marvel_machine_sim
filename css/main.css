@@ -116,18 +116,21 @@ body {
 
 .navigator-bar {
     background-color: var(--primary);
-    padding-bottom: 0.4rem;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
     margin-bottom: 1rem;
 }
 
 .navigator-bar h1 {
-    font-size: 2.0rem;
+    font-size: 2.1rem;
     padding: 0 1rem 0 0;
     margin-right: 12%;
+    line-height: 1.5;
 }
 
 .navigator-bar .nav-menu {
     justify-content: center;
+    margin-left: 0;
 }
 
 .navigator-bar .nav-item {
