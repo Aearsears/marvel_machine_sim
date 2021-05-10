@@ -158,6 +158,11 @@ body {
     margin-left: auto;
 }
 
+#github-link a {
+    color: black;
+    text-decoration: none;
+}
+
 #github-link:hover {
     background-color: rgb(212, 87, 87);
     border-radius: 5px;
