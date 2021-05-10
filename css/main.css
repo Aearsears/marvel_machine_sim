@@ -6,7 +6,7 @@
 body {
     margin-top: 0px;
     background-color: #e9ecef;
-    padding-top: 150px;
+    font-family: 'Noto Sans', sans-serif;
 }
 .card-body{
     background-color: #e9ecef;
@@ -116,6 +116,59 @@ body {
 
 .navigator-bar {
     background-color: var(--primary);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.navigator-bar h1 {
+    font-size: 2.0rem;
+    padding: 0 1rem 0 0;
+    margin-right: 12%;
+}
+
+.navigator-bar .nav-menu {
+    justify-content: center;
+}
+
+.navigator-bar .nav-item {
+    transition: background 0.2s ease-in;
+}
+.navigator-bar .nav-item:hover {
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+
+.navigator-bar .nav-menu .nav-pills {
+    width: 100%;
+}
+
+.navigator-bar .nav-menu .nav-pills .nav-item:last-child {
+    margin-left: auto;
+}
+
+#github-link:hover {
+    background-color: rgb(212, 87, 87);
+    border-radius: 5px;
+}
+
+.navigator-bar .navbar-toggler {
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+}
+
+.navigator-bar .external a {
+    color: black;
+}
+
+@media screen and (max-width: 576px) {
+    .navigator-bar .nav-menu .nav-pills, .nav-link, a {
+        width: 100%;
+        display: inline;
+    }
+
+    .navigator-bar .nav-menu .nav-pills .active {
+        width: 100%;
+    }
 }
 
 /** Network */
@@ -126,7 +179,7 @@ body {
 }
 
 #mynetwork {
-    background-color: var(--secondary);
+    background-color: rgb(85, 160, 167);
     height: 1000px;
     width: 75%;
 }
