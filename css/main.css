@@ -223,3 +223,8 @@ body {
 #btn-amount {
     background-color: var(--secondary);
 }
+
+#flush-collapseTwo div ul{
+    list-style-type:none
+
+}
