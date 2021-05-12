@@ -20,8 +20,8 @@ sound.addEventListener('ended', function () {
 
 $('#btn-slot').click(function () {
     if ($('#slot ul').is(":animated")) return;
-    if($('#congraluations').is(":visible")){
-        $('#congraluations')[0].setAttribute("style","visibility:hidden");
+    if($('#congratulations').is(":visible")){
+        $('#congratulations')[0].setAttribute("style","visibility:hidden");
     }
     if(indexes!=null){
             //add the items to the inventory
@@ -67,9 +67,13 @@ $('#btn-slot').click(function () {
             ding.play(); // Play ding after each number is stopped
         },
         onFinish: function () {
-            //test(); // display the congraluations banner
-            $('#congraluations')[0].setAttribute("style","visibility:visible"); 
+            //test(); // display the congratulations banner
+            $('#congratulations')[0].setAttribute("style","visibility:visible"); 
             sound.pause(); // To stop the looping sound is pause it
+
+            setTimeout(function() {
+                $('#congratulations')[0].setAttribute("style", "visibility:hidden");
+            }, 3000);
         }
     });
 
