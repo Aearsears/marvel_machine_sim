@@ -163,6 +163,11 @@ body {
     text-decoration: none;
 }
 
+#flush-collapseTwo div ul{
+    list-style-type:none
+
+}
+
 #github-link:hover {
     background-color: rgb(212, 87, 87);
     border-radius: 5px;
@@ -224,7 +229,3 @@ body {
     background-color: var(--secondary);
 }
 
-#flush-collapseTwo div ul{
-    list-style-type:none
-
-}
