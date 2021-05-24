@@ -95,6 +95,11 @@ code {
     text-decoration: underline;
     color: #a9b119;
   }
+
+  #randomize img {
+    width: 100px;
+    height: 100px;
+  }
   
   .slotMachine .slot{
     height:100px;

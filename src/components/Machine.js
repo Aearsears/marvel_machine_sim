@@ -7,77 +7,51 @@ import { useEffect } from 'react';
 
 const Machine = () => {
     useEffect(() => {
-        //console.log('effect');
         const btn = document.querySelector('#randomizeButton');
         const results = {
-        machine1: document.querySelector('#machine1Result'),
-        machine2: document.querySelector('#machine2Result'),
-        machine3: document.querySelector('#machine3Result')
+            machine1: document.querySelector('#machine1Result'),
+            machine2: document.querySelector('#machine2Result'),
+            machine3: document.querySelector('#machine3Result')
         };
         const el1 = document.querySelector('#machine1');
         const el2 = document.querySelector('#machine2');
         const el3 = document.querySelector('#machine3');
-        const machine1 = new SlotMachine(el1, { active: 0 });
-        const machine2 = new SlotMachine(el2, { active: 1 });
-        const machine3 = new SlotMachine(el3, { active: 2 });
+        const machine1 = new SlotMachine(el1);
+        const machine2 = new SlotMachine(el2);
+        const machine3 = new SlotMachine(el3);
 
+        const update = (machine) => {
+            var machineNode = document.getElementById(machine);
+            var container = machineNode.getElementsByClassName('slotMachineContainer');
+            var machineContainer = container[0];
+
+            machineContainer.style.transform = `matrix(1, 0, 0, 1, 0, 0)`;
+        }
+            
         function onComplete(){
-
-            const update = (machine) => {
-                //console.log('running update...');
-                var machineNode = document.getElementById(machine.element.id);
-                var container = machineNode.getElementsByClassName('slotMachineContainer');
-        
-                var machineContainer = container[0];
-                const matrixValues = machineContainer.style.transform.match(/matrix.*\((.+)\)/)[1].split(', ')
-                //console.log(matrixValues);
-                //console.log(matrixValues[5]);
-                var original = parseInt(matrixValues[5]);
-                machineContainer.style.transform = `matrix(1, 0, 0, 1, 0, ${original+80})`;
-                }
-
             console.log(this.element.id);
             
             var machineNode = document.getElementById(this.element.id);
             var container = machineNode.getElementsByClassName('slotMachineContainer');
-
-            var machineContainer = container[0];
-            const matrixValues = machineContainer.style.transform.match(/matrix.*\((.+)\)/)[1].split(', ')
-            //console.log(matrixValues);
-            //console.log(matrixValues[5]);
-            var original = parseInt(matrixValues[5]);
-            machineContainer.style.transform = `matrix(1, 0, 0, 1, 0, ${original+6})`;
-
             var winner = container[0].childNodes[this.active];
 
             console.log(winner.childNodes[0].attributes['title']);
             console.log(winner.childNodes[0].attributes['itemid']);
 
-            //var winnerSrc = winner.childNodes[0].attributes;
-            //console.log(winnerSrc.src.textContent);
-
             results[this.element.id].innerText = `Index: ${this.active}`;
-            //var c = this.childNodes[0];
-            //console.log(c);
-
-            update(this);
         }
         
         
-
-        /**
-        update(machine1);
-        update(machine2);
-        update(machine3);
-        */
         const clicker = () => {
             machine1.shuffle(5, onComplete);
-            //machine2.shuffle(30, onComplete);
-            //machine3.shuffle(20, onComplete);
             setTimeout(() => machine3.shuffle(5, onComplete), 500);
             setTimeout(() => machine2.shuffle(5, onComplete), 1000);
         }
+
         btn.addEventListener('click', clicker);
+        update('machine1');
+        update('machine2');
+        update('machine3');
     }, []);
 
     return (
