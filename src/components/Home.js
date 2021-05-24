@@ -5,7 +5,7 @@ const Home = () => {
     return (
         <Container id='home-info'>
             <Row className='justify-content-center'>
-                <h1>Marvel</h1> 
+                <h1>Marvel Machine Simulator</h1> 
             </Row>
 
             <Row className='homeDesc'>

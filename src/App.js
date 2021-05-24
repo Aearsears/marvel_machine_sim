@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 import SideNavBar from './components/SideNavBar';
 import SlotMachine from './components/SlotMachine';
@@ -12,15 +12,21 @@ function App() {
   const visRef = useRef(),
         slotsRef = useRef(),
         homeRef = useRef();
+  
+  const [collapsed, setCollapsed] = useState(false);
 
   return (
     <Container fluid>
       <Row className='pageDisplay'>
-          <Col xs={2} id='sidenavbar-container'>
-            <SideNavBar homer={homeRef} visr={visRef} slotsr={slotsRef}/>
+          <Col xs={collapsed ? 1 : 2} id='sidenavbar-container'>
+            <SideNavBar 
+            homer={homeRef} visr={visRef} slotsr={slotsRef}
+            collapsed={collapsed}
+            setCollapsed={setCollapsed}
+            />
           </Col>
 
-          <Col xs={10} id='main-content'>
+          <Col xs={collapsed ? 11 : 10} id='main-content'>
             <Row className='appItem justify-content-center'>
             <div ref={homeRef}>
               <Home ref={homeRef}/>

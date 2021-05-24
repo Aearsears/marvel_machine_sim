@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-const SideNavBar = ({ homer, slotsr, visr }) => {
+const SideNavBar = ({ homer, slotsr, visr, collapsed, setCollapsed }) => {
     
     const scroll = (ref) => {
         return () => {
@@ -24,15 +24,20 @@ const SideNavBar = ({ homer, slotsr, visr }) => {
             </Row>
 
             <Button variant='dark' onClick={scroll(homer)}>
-                Home
+                {collapsed ? 'H' : 'Home'}
             </Button>
 
             <Button onClick={scroll(slotsr)}>
-                Simulator
+                {collapsed ? 'S' : 'Slots'}
             </Button>
 
             <Button onClick={scroll(visr)}>
-                Visualization
+                {collapsed ? 'V' : 'Visualization'}
+            </Button>
+
+            <Button id='collapse-btn'
+                onClick={() => { setCollapsed(!collapsed) }}>
+                {collapsed ? 'Expand' : 'Collapse'}
             </Button>
         </Container>
     );
