@@ -33,16 +33,16 @@ const Home = () => {
                 </p>
                 <ul>
                     <li>
-                        <a href='#'>Github</a>
+                        <a href='https://github.com/Aearsears/marvel_machine_sim'>Github</a>
                     </li>
                     <li>
-                        <a href='#'>My Website</a>
+                        <a href='https://youtu.be/qhHXu-wUWVg'>My Website</a>
                     </li>
                     <li>
-                        <a href='#'>Twitter</a>
+                        <a href='https://youtu.be/6QJ1dt6-94o'>Twitter</a>
                     </li>
                     <li>
-                        <a href='#'>Discord</a>
+                        <a href='https://youtu.be/YFmUR_4RHjA'>Discord</a>
                     </li>    
                 </ul>
             </Row>
