@@ -4,7 +4,7 @@ import Col from 'react-bootstrap/Col';
 import { useRef, useState } from 'react';
 
 import SideNavBar from './components/SideNavBar';
-import SlotMachine from './components/SlotMachine';
+import SlotMachine from './components/Machine';
 import Visual from './components/Visual';
 import Home from './components/Home';
 

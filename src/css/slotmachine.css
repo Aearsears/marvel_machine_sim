@@ -1,0 +1,123 @@
+/*
+ * SlotMachine
+ */
+ #randomize {
+    border-bottom: 10px solid rgb(72, 158, 48);
+    background-color: #EB6B56;
+    border-top: 20px dashed #B8312F;
+  }
+  
+  #randomize .row > div.col-sm-4 > div {
+    padding: 40px;
+    width: 180px;
+    height: 180px;
+    background: white;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+  
+  #randomize .row > div.col-xs-4 > div {
+    padding-top: 40px;
+    padding-left: 40px;
+    width: 175px;
+    height: 175px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: auto;
+  }
+  
+  .randomizeMachine {
+    width: 100px;
+    height: 100px;
+  }
+  
+  #randomize .btn-group {
+    margin-top: 30px;
+    width: auto;
+    margin-bottom: 15px;
+  }
+  
+  .machineResult {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    height: 50px !important;
+    background: transparent !important;
+    font-size: 18px;
+    padding: 10px !important;
+  }
+  
+  .slotMachineContainer {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+
+  
+code {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: rgba(245, 245, 245, 0.7) !important;
+    text-align: left;
+  }
+  
+  .well {
+    padding: 25px;
+    background-color: rgba(245, 245, 245, 0.7);
+    border-radius: 5px;
+  }
+  
+  .well p {
+    font-size: 0.8rem;
+  }
+  
+  .btn-group-justified {
+    margin: 0 auto;
+  }
+  
+  h1 {
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  .container {
+    padding-top: 10px;
+    padding-bottom: 50px;
+  }
+  
+  a{
+    color: #ccd500;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    text-decoration: underline;
+    color: #a9b119;
+  }
+  
+  .slotMachine .slot{
+    height:100px;
+    background-position-x: 55%;
+    background-repeat: no-repeat;
+  }
+  
+  .slotMachineNoTransition {
+      transition: none !important;
+  }
+  
+  .slotMachineBlurFast {
+      filter: blur(5px);
+  }
+  
+  .slotMachineBlurMedium {
+      filter: blur(3px);
+  }
+  
+  .slotMachineBlurSlow {
+      filter: blur(2px);
+  }
+  
+  .slotMachineBlurTurtle {
+      filter: blur(1px);
+  }
