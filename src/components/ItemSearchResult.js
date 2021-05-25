@@ -1,6 +1,6 @@
 /**
  * Creates an item to show in the search results
- * 64x64 img, name, and rate is displayed
+ * 64x64 img, name, rate and wheel is displayed
  * 
  * TODO: move styling out to css file
  */
@@ -21,7 +21,12 @@ const ItemSearchResult = ({ item, setVisualItem }) => {
                 />
             <div className='sm-3' style={{ marginLeft: '0.8rem' }}>
                 <div>{item['name']}</div>
-                <div className='text-muted'>{item['Rate']+'%'}</div>
+                <div className='otherInfo row' style={{ marginLeft: '0.8rem'}}>
+                    <div className='text-muted' style={{ paddingRight: '0.5rem' }}>
+                        {item['Rate']+'%'}
+                    </div>
+                    <div className='text-muted'>{'| '+item['wheel']+' wheel'}</div>
+                </div>
             </div>
         </div>
     );

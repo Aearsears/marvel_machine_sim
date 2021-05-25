@@ -15,10 +15,12 @@ const Search = ({ items, setVisualItem }) => {
             />
             <div className='flex-grow-1 my-2 searchResults' 
                 style={{ overflowY: 'auto' }}>
-                {/* search match */}
+                {/* search match
+                    search by: name, wheel */}
                 {items.filter((item) => { 
                         const lowered = item['name'].toLowerCase();
-                        return lowered.includes(search.toLowerCase());
+                        return lowered.includes(search.toLowerCase())
+                            || item['wheel'] === search.toLowerCase();
                     })
                     .map((item) => {
                         return (
