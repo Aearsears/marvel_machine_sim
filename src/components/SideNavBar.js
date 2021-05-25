@@ -4,7 +4,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const SideNavBar = ({ homer, slotsr, visr, collapsed, setCollapsed }) => {
-    
+    // Scrolls the correct section into place
     const scroll = (ref) => {
         return () => {
             return ref.current.scrollIntoView({ behavior: 'smooth' });

@@ -9,11 +9,13 @@ const Search = ({ items, setVisualItem }) => {
 
     return (
         <Container className='d-flex flex-column py-2' style={{ height: '50vh', width: '100%' }}>
+            {/*displays the search bar and the results of the search*/}
             <Form.Control type='search' placeholder='Search an item'
                 value={search} onChange={(e)=> { setSearch(e.target.value)} }
             />
             <div className='flex-grow-1 my-2 searchResults' 
                 style={{ overflowY: 'auto' }}>
+                {/* search match */}
                 {items.filter((item) => { 
                         const lowered = item['name'].toLowerCase();
                         return lowered.includes(search.toLowerCase());
@@ -24,9 +26,7 @@ const Search = ({ items, setVisualItem }) => {
                         )
                     })}
             </div>
-            <div>
-                Display visual on lower half (or lower if you want, change the vh styling)
-            </div>
+            {/* Display visual on lower half (or lower if you want, change the vh styling) */}
         </Container>
     );
 };

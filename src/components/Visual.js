@@ -6,12 +6,16 @@ import Search from './Search';
 const Visual = ({ items, visualItem, setVisualItem }) => {
     return (
         <Container id='item-visual'>
+            {/* search bar */}
             <Row className='justify-content-center'>
                 <Search items={items} setVisualItem={setVisualItem}/>
             </Row>
 
+            {/* visual
+                displays the visual for the visualItem */}
             <Row className='justify-content-center'>
                 <Container id='vis-item'>
+                    {/* temp */}
                     The current item being displayed is {visualItem ? visualItem['name'] : 'nothing'}
                     {visualItem &&
                         <div className='d-flex m-2 align-items-center'>

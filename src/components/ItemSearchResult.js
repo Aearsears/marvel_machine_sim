@@ -1,4 +1,9 @@
-
+/**
+ * Creates an item to show in the search results
+ * 64x64 img, name, and rate is displayed
+ * 
+ * TODO: move styling out to css file
+ */
 const ItemSearchResult = ({ item, setVisualItem }) => {
     const selectItem = () => {
         setVisualItem(item);

@@ -17,6 +17,8 @@ function App() {
   const [itemData, setItemData] = useState([]);
   const [visualItem, setVisualItem] = useState(null);
 
+  // fetch all items once at page load
+  // pass the items as props to the other sections instead of calling the api again
   useEffect(() => {
     fetch('https://marvel-api-ten.vercel.app/api/items')
     .then((resp) => {
@@ -35,6 +37,7 @@ function App() {
   return (
     <Container fluid>
       <Row className='pageDisplay'>
+          {/*nav sidebar*/}
           <Col xs={collapsed ? 1 : 2} id='sidenavbar-container'>
             <SideNavBar 
             homer={homeRef} visr={visRef} slotsr={slotsRef}
@@ -43,19 +46,23 @@ function App() {
             />
           </Col>
 
+          {/* app */}
           <Col xs={collapsed ? 11 : 10} id='main-content'>
+            {/*home, about, information, links*/}
             <Row className='appItem justify-content-center'>
             <div ref={homeRef}>
               <Home ref={homeRef}/>
             </div>
             </Row>
             
+            {/*simulator: slot machine, double marvel, inventory*/}
             <Row className='appItem justify-content-center'>
             <div ref={slotsRef}>
               <SlotMachine ref={slotsRef}/>
             </div>
             </Row>
 
+            {/*visualization: item selector, visual*/}
             <Row className='appItem justify-content-center'>
             <div ref={visRef} style={{ width: '100%' }}>
               <Visual ref={visRef} items={itemData} visualItem={visualItem} setVisualItem={setVisualItem}/>

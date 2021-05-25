@@ -6,6 +6,11 @@ import SlotMachine from 'jquery-slotmachine/lib/slot-machine.js';
 import { useEffect } from 'react';
 
 const Machine = () => {
+
+    /**
+     * The slot machine is loaded up once when the component renders.
+     * The result of the slots should be passed to the inventory
+     */
     useEffect(() => {
         const btn = document.querySelector('#randomizeButton');
         const results = {
@@ -35,6 +40,8 @@ const Machine = () => {
             var container = machineNode.getElementsByClassName('slotMachineContainer');
             var winner = container[0].childNodes[this.active];
 
+            // This should be replaced by updating the list of items in the
+            // inventory component. Only the id needs to be sent
             console.log(winner.childNodes[0].attributes['title']);
             console.log(winner.childNodes[0].attributes['itemid']);
 
@@ -43,17 +50,21 @@ const Machine = () => {
         
         
         const clicker = () => {
+            // use greater number of spins to make it spin longer
             machine1.shuffle(5, onComplete);
             setTimeout(() => machine3.shuffle(5, onComplete), 500);
             setTimeout(() => machine2.shuffle(5, onComplete), 1000);
         }
 
         btn.addEventListener('click', clicker);
+        
+        // some offset to align the items on the page correctly
         update('machine1');
         update('machine2');
         update('machine3');
     }, []);
 
+    // jsx needs heavy cleanup
     return (
         <Container id='item-slot-machine'>
             <Row className='justify-content-center'>
@@ -68,6 +79,8 @@ const Machine = () => {
                     <div className="row">
                         <div className="col-sm-4">
                         <div>
+                        {/* the slot machines should dynamically fill their containers with 
+                            the items from the props */}
                             <div id="machine1" className="randomizeMachine">
                                 <div><img className='photo' alt='' itemid='12' title='All-Star-Face-Coupon' src="https://marvel-api-ten.vercel.app/static/img/2021/All-Star-Face-Coupon.png" /></div>
                                 <div><img className='photo' alt='' itemid='12' title='All-Star-Face-Coupon' src="https://marvel-api-ten.vercel.app/static/img/2021/All-Star-Hair-Coupon.png" /></div>
@@ -118,6 +131,8 @@ const Machine = () => {
                 </div>
             </Row>
           
+
+            {/* Inventory tracker. Includes money/NX spent */}
             <Row>
                 <Inventory />
             </Row>
