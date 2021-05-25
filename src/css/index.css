@@ -170,3 +170,12 @@ code {
 }
 
 /* Slot machine */
+
+
+
+/* Visual */
+
+.searchResults {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

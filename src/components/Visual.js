@@ -1,16 +1,32 @@
-import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
-const Visual = () => {
+import Search from './Search';
+
+const Visual = ({ items, visualItem, setVisualItem }) => {
     return (
         <Container id='item-visual'>
             <Row className='justify-content-center'>
-                <h1>Choose item</h1> 
+                <Search items={items} setVisualItem={setVisualItem}/>
             </Row>
 
             <Row className='justify-content-center'>
-                <Button>vis</Button>
+                <Container id='vis-item'>
+                    The current item being displayed is {visualItem ? visualItem['name'] : 'nothing'}
+                    {visualItem &&
+                        <div className='d-flex m-2 align-items-center'>
+                            <img src={'https://marvel-api-ten.vercel.app/'+visualItem['path']}
+                                style={{ height: '64px', width: '64px' }}
+                                alt={visualItem['name']}
+                                />
+                            <div className='sm-3' style={{ marginLeft: '0.8rem' }}>
+                                <div>{visualItem['name']}</div>
+                                <div className='text-muted'>{visualItem['Rate']+'%'}</div>
+                            </div>
+                        </div>
+                    }
+                    
+                </Container>
             </Row>            
         </Container>
     );
