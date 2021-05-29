@@ -28,35 +28,7 @@ function createNodes(num){
         const legend = document.querySelector('#network-contents');
         legend.innerHTML = `Large blue node is ${scalef} rolls.<br>Red node is your winning roll.`
             + (scalef!=1 ? '<br>Small blue node is 1 roll' : '');
-        x.push({
-            x:-container.clientWidth/2,
-            y:-container.clientWidth/2,
-            label: "Large blue node is " +scalef +" rolls",
-            font:{size:32},
-            value:1,
-            fixed:true,
-            physics:false
-        },
-        {
-            x:-container.clientWidth/2,
-            y:-container.clientWidth/2+100,
-            label: "Red node is your winning roll",
-            font:{size:32},
-            value:1,
-            fixed:true,
-            physics:false
-        });
-        if(scalef!=1){
-            x.push({
-                x:-container.clientWidth/2,
-                y:-container.clientWidth/2+50,
-                label: "Small blue node is 1 roll",
-                font:{size:32},
-                value:1,
-                fixed:true,
-                physics:false
-            })
-        }
+        
         var nodes= new vis.DataSet(x);
         var data = {
             nodes: nodes,
