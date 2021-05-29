@@ -21,7 +21,7 @@ function createNodes(num){
         }
         else{
             //scale f tries
-            x.push({id:i,color:'green'});
+            x.push({id:i,color:'blue', shape: 'dot', size: 30});
         }
     }
         var container = document.getElementById('mynetwork');
@@ -29,7 +29,7 @@ function createNodes(num){
         x.push({
             x:-container.clientWidth/2,
             y:-container.clientWidth/2,
-            label: "Green node is " +scalef +" rolls",
+            label: "Large blue node is " +scalef +" rolls",
             font:{size:32},
             value:1,
             fixed:true,
@@ -48,7 +48,7 @@ function createNodes(num){
             x.push({
                 x:-container.clientWidth/2,
                 y:-container.clientWidth/2+50,
-                label: "Blue node is 1 roll",
+                label: "Small blue node is 1 roll",
                 font:{size:32},
                 value:1,
                 fixed:true,
