@@ -215,6 +215,13 @@ body {
     width: 75%;
 }
 
+.networkLegend {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0 0.1rem;
+    line-height: 1.6;
+}
+
 /** Buttons */
 
 #btn-slot {

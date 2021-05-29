@@ -25,7 +25,9 @@ function createNodes(num){
         }
     }
         var container = document.getElementById('mynetwork');
-        
+        const legend = document.querySelector('#network-contents');
+        legend.innerHTML = `Large blue node is ${scalef} rolls.<br>Red node is your winning roll.`
+            + (scalef!=1 ? '<br>Small blue node is 1 roll' : '');
         x.push({
             x:-container.clientWidth/2,
             y:-container.clientWidth/2,
