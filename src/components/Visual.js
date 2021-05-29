@@ -29,7 +29,8 @@ const Visual = ({ items, visualItem, setVisualItem }) => {
                     </div>
                 }
                 <Container id='vis-item'>
-                    <VisualAnimation item={visualItem}/>
+                    {/* key needed to avoid duplication issue */}
+                    {visualItem && <VisualAnimation item={visualItem} key={visualItem['item_id']}/>}
                 </Container>
             </Row>            
         </Container>
