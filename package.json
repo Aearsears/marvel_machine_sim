@@ -8,7 +8,7 @@
     "avltree-js": "^1.2.9",
     "bootstrap": "^4.6.0",
     "buckets-js": "^1.98.2",
-    "http-server": "^0.12.3",
+    "http-server": "^14.1.1",
     "jquery": "^3.6.0"
   },
   "devDependencies": {},
